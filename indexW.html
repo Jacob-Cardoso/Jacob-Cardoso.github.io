@@ -1,0 +1,4847 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+<head>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+
+	<link rel="icon" href="images/waterloo/favicon.png">
+
+	<title>
+		Jacob Cardoso - Portfolio
+	</title>
+	<style>
+
+
+	@media screen and (max-width: 10000000000000px ){
+		body::-webkit-scrollbar {
+				width: 0.4vw;
+				background: #121c21;
+			}
+
+			body::-webkit-scrollbar-thumb {
+				background: #fdd54f;
+				height: 1.171875vw;
+			}
+
+			body::-webkit-scrollbar-track-piece {
+				display: none;
+			}
+			html {
+				scroll-behavior: smooth;
+				background-color: #121c21;
+			}
+
+			body {
+				height: 100%;
+				margin: 0;
+			}
+
+			.navbar ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #121c21;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: 9998;
+
+			}
+
+			.navbar li {
+				float: right;
+			}
+
+			.navbar li a {
+				display: block;
+				color: #979b9d;
+				font-family: 'Press Start 2P';
+				font-size: 0.8vw;
+				text-align: center;
+				padding: 2.1vh 1vh;
+				text-decoration: none;
+
+			}
+
+			.navbar h1 {
+				float: left;
+				padding-left: 1vh;
+				margin-top: 2vh;
+				display: block;
+				color: #fdd54f;
+				font-family: 'Press Start 2P';
+				font-size: 0.8vw;
+				text-align: left;
+				text-decoration: none;
+			}
+
+			.navbar li a:hover:not(.active) {
+				color: #ffffff;
+			}
+
+			.navbar .active {
+				color: #fdd54f;
+			}
+
+			.cover {
+				width: 100%;
+				height: 100vh;
+				background: linear-gradient(to right, #121c21 50%, #fdd54f 50%)
+			}
+
+			.cover h1 {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-family: 'Press Start 2P';
+				font-size: 2.5vw;
+				color: #ffffff;
+				font-weight: 100;
+
+				transform: translate(-43%, -50%);
+			}
+
+			.cover h2 {
+				position: absolute;
+				top: 60%;
+				left: 50%;
+				font-family: 'Press Start 2P';
+				font-size: 0.8vw;
+				font-weight: 100;
+				color: #ffffff;
+				transform: translate(-43.7%);
+			}
+
+			.links {
+				position: fixed;
+				left: 0.6vw;
+				top: 85vh;
+				height: 13.2vh;
+				width: 3vw;
+				background-color: #121c21;
+				outline: 0.17vw solid #1d2e35;
+				outline-offset: -0.4vw;
+				z-index: 9999;
+
+			}
+
+			.about {
+				position: relative;
+				background-color: #1d2e35;
+				width: 100%;
+				height: 51vh;
+			}
+
+			.skills {
+				position: relative;
+				background-color: #121c21;
+				width: 100%;
+				height: 100vh;
+
+			}
+
+			.achievements {
+				background-color: #1d2e35;
+				width: 100%;
+				height: 68vh;
+				position: relative;
+			}
+
+			.footer1 {
+				position: relative;
+				background-color: #fdd54f;
+				width: 100%;
+				height: 13vh;
+			}
+
+			#copy {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 25%;
+				font-size: 1.0375vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-75%, -50%);
+
+			}
+
+			#email {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-size: 1.0375vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+			}
+
+			#phone {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 75%;
+				font-size: 1.0375vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-25%, -50%);
+
+			}
+
+
+			#aboutScroll {
+				position: absolute;
+				top: 70%;
+				left: 50%;
+				transform: translate(-50%);
+			}
+
+			#aboutScroll:hover {
+				opacity: 0.3;
+
+			}
+
+			#scrollImage {
+				width: 3.90625vw;
+				height: 2.03125vw;
+			}
+
+			#githubLink {
+				position: absolute;
+				top: 10%;
+				left: 50%;
+				width: 1.6vw;
+				height: 1.6vw;
+				transform: translate(-50%);
+			}
+
+			#githubLink:hover {
+				opacity: 0.3;
+			}
+
+			#emailLink {
+				position: absolute;
+				top: 40%;
+				left: 50%;
+				width: 1.6vw;
+				height: 1.6vw;
+				transform: translate(-50%);
+			}
+
+			#emailLink:hover {
+				opacity: 0.3;
+			}
+
+			#replLink {
+				position: absolute;
+				top: 67%;
+				left: 50%;
+				width: 1.6vw;
+				height: 1.6vw;
+				transform: translate(-50%);
+			}
+
+			#replLink:hover {
+				opacity: 0.3;
+			}
+
+			#aboutImage {
+				position: absolute;
+				left: 25%;
+				top: 3vh;
+				width: 20.421875vw;
+				height: 24.2109375vw;
+				border: 0.234375vw solid #fdd54f;
+			}
+
+			.about h1 {
+				font-family: "Press Start 2P";
+				color: #fdd54f;
+				position: absolute;
+				font-size: 2vw;
+				font-weight: 100;
+				top: 3vh;
+				left: 50%;
+			}
+
+			.about p {
+				font-family: "Russo One";
+				font-size: 1.03125vw;
+				color: #979b9d;
+				position: absolute;
+				top: 12vh;
+				left: 50%;
+			}
+
+			.about em {
+				font-style: normal;
+				color: white;
+			}
+
+
+			.projectsButton {
+				position: absolute;
+				left: 50%;
+				top: 39vh;
+				border: 0.234375vw solid #121c21;
+				outline: 0.18125vw solid #1d2e35;
+				outline-offset: -0.2953125vw;
+				background-color: #121c21;
+				color: #fdd54f;
+				padding: 1.38125vw 1.171875vw;
+				font-family: "Press Start 2P";
+				font-size: 1.15vw;
+				cursor: pointer;
+			}
+
+			.projectsButton:hover {
+				color: white;
+			}
+
+			.skills h1 {
+				font-size: 2vw;
+				font-family: "Press Start 2P";
+				color: #fdd54f;
+				position: absolute;
+				font-weight: 100;
+				top: 2vh;
+				left: 50%;
+				transform: translate(-50%);
+			}
+
+			.python {
+				left: 50%;
+				top: 15vh;
+				height: 17.5vw;
+				width: 25.484375vw;
+				position: absolute;
+				background-color: #1d2e35;
+				outline: 0.198125vw solid #121c21;
+				outline-offset: -0.3353125vw;
+				transform: translate(-115%);
+			}
+
+			.HTML {
+				left: 50%;
+				top: 15vh;
+				height: 17.5vw;
+				width: 25.484375vw;
+				position: absolute;
+				background-color: #1d2e35;
+				outline: 0.198125vw solid #121c21;
+				outline-offset: -0.3353125vw;
+				transform: translate(15%);
+			}
+
+			.pc {
+				left: 50%;
+				top: 58vh;
+				height: 17.5vw;
+				width: 25.484375vw;
+				position: absolute;
+				background-color: #1d2e35;
+				outline: 0.198125vw solid #121c21;
+				outline-offset: -0.3353125vw;
+				transform: translate(-115%);
+
+			}
+
+			.pspr {
+				left: 50%;
+				top: 58vh;
+				height: 17.5vw;
+				width: 25.484375vw;
+				position: absolute;
+				background-color: #1d2e35;
+				outline: 0.198125vw solid #121c21;
+				outline-offset: -0.3353125vw;
+				transform: translate(15%);
+
+			}
+
+			#pImage {
+				position: absolute;
+				left: 50%;
+				top: 7%;
+				height: 2.953125vw;
+				width: 5.90625vw;
+				transform: translate(-50%);
+			}
+
+			#tImage {
+				position: absolute;
+				left: 50%;
+				top: 7%;
+				height: 2.953125vw;
+				width: 2.953125vw;
+				transform: translate(-50%);
+			}
+
+			#hImage {
+				position: absolute;
+				left: 50%;
+				top: 5%;
+				width: 9.765625vw;
+				height: 3.02734375vw;
+				transform: translate(-50%);
+			}
+
+			#prImage {
+				position: absolute;
+				left: 50%;
+				top: 7%;
+				width: 4.8828125vw;
+				height: 2.1484375vw;
+				transform: translate(-50%);
+			}
+
+			.python p {
+				font-family: "Russo One";
+				font-size: 0.95vw;
+				color: #979b9d;
+				position: absolute;
+				text-align: center;
+				top: 20%;
+				left: 50%;
+				width: 95%;
+				transform: translate(-50%);
+			}
+
+			.python em {
+				font-style: normal;
+				color: white;
+			}
+
+			.pc p {
+				font-family: "Russo One";
+				font-size: 0.95vw;
+				color: #979b9d;
+				position: absolute;
+				text-align: center;
+				top: 20%;
+				left: 50%;
+				width: 95%;
+				transform: translate(-50%);
+			}
+
+			.pc em {
+				font-style: normal;
+				color: white;
+			}
+
+			.HTML p {
+				font-family: "Russo One";
+				font-size: 0.95vw;
+				color: #979b9d;
+				position: absolute;
+				text-align: center;
+				top: 20%;
+				left: 50%;
+				width: 95%;
+				transform: translate(-50%);
+			}
+
+			.HTML em {
+				font-style: normal;
+				color: white;
+			}
+
+			.pspr p {
+				font-family: "Russo One";
+				font-size: 0.95vw;
+				color: #979b9d;
+				position: absolute;
+				text-align: center;
+				top: 20%;
+				left: 50%;
+				width: 95%;
+				transform: translate(-50%);
+			}
+
+			.pspr em {
+				font-style: normal;
+				color: white;
+			}
+
+			.achievementsRect {
+				left: 30%;
+				top: 50%;
+				height: 39vh;
+				width: 27.53125vw;
+				position: absolute;
+				background-color: #121c21;
+				outline: 0.178125vw solid #1d2e35;
+				outline-offset: -0.2953125vw;
+				transform: translate(-50%, -50%);
+			}
+
+			.achievementsRect2 {
+				left: 70%;
+				top: 50%;
+				height: 39vh;
+				width: 27.53125vw;
+				position: absolute;
+				background-color: #121c21;
+				outline: 0.178125vw solid #1d2e35;
+				outline-offset: -0.2953125vw;
+				transform: translate(-50%, -50%);
+
+			}
+
+			.achievements h1 {
+				font-size: 2vw;
+				font-family: "Press Start 2P";
+				color: #fdd54f;
+				position: absolute;
+				font-weight: 100;
+				top: 5%;
+				left: 50%;
+				transform: translate(-50%);
+			}
+
+			.achievements h2 {
+				font-size: 1.575vw;
+				font-family: "Russo One";
+				color: white;
+				position: absolute;
+				font-weight: 100;
+				left: 50%;
+				transform: translate(-50%);
+			}
+
+			* {
+				box-sizing: border-box
+			}
+
+			.container {
+				width: 80%;
+				background-color: #979b9d;
+				position: relative;
+				left: 50%;
+				top: 14%;
+				transform: translate(-50%)
+			}
+
+			.grades1 {
+				padding-top: 0.8vh;
+				padding-bottom: 0.8vh;
+				color: #979b9d;
+			}
+
+			#g1 {
+				font-size: 0.925vw;
+				text-align: left;
+				font-family: "Russo One";
+				position: relative;
+				left: 10%;
+				top: 14%;
+				color: white;
+			}
+
+
+			.cs {
+				width: 100%;
+				background-color: #fdd54f;
+			}
+
+			.ce {
+				width: 100%;
+				background-color: #fdd54f;
+			}
+
+			.ba {
+				width: 98%;
+				background-color: #fdd54f;
+			}
+
+			.law {
+				width: 98%;
+				background-color: #fdd54f;
+			}
+
+			.nowrap {
+				white-space: nowrap;
+			}
+
+			.container2 {
+				width: 80%;
+				background-color: #fdd54f;
+				position: relative;
+				left: 50%;
+				top: 14%;
+				transform: translate(-50%)
+			}
+
+			.grades2 {
+				padding-top: 0.8vh;
+				padding-bottom: 0.8vh;
+				color: #979b9d;
+			}
+
+			#g2 {
+				font-size: 0.925vw;
+				text-align: left;
+				font-family: "Russo One";
+				position: relative;
+				left: 10%;
+				top: 14%;
+				color: white;
+			}
+
+
+			.cs2 {
+				width: 1%;
+				background-color: #979b9d;
+			}
+
+			.ce2 {
+				width: 0%;
+				background-color: #979b9d;
+			}
+
+			.ba2 {
+				width: 2%;
+				background-color: #979b9d;
+			}
+
+			.law2 {
+				width: 2%;
+				background-color: #979b9d;
+			}
+
+			#g9Honor {
+				position: absolute;
+				left: 50%;
+				top: 20%;
+				width: 4.8828125vw;
+				height: 4.1015625vw;
+				transform: translate(-50%);
+			}
+
+			#g10Honor {
+				position: absolute;
+				left: 50%;
+				top: 35%;
+				width: 4.8828125vw;
+				height: 4.1015625vw;
+				transform: translate(-50%);
+			}
+
+			#g11Honor {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				width: 4.8828125vw;
+				height: 4.1015625vw;
+				transform: translate(-50%);
+			}
+
+			#g12Honor {
+				position: absolute;
+				left: 50%;
+				top: 65%;
+				width: 4.8828125vw;
+				height: 4.1015625vw;
+				transform: translate(-50%);
+			}
+
+}	
+
+		
+  
+		@media screen and (max-width: 2560px ) and (max-height: 1080px ) {
+			html {
+			background-color: #121c21;
+			}
+
+
+			body::-webkit-scrollbar {
+				width: 0.4vw;
+				background: #121c21;
+			}
+
+			body::-webkit-scrollbar-thumb {
+				background: #fdd54f;
+				height: 1.171875vw;
+			}
+
+			body::-webkit-scrollbar-track-piece {
+				display: none;
+			}
+
+			html {
+				scroll-behavior: smooth;
+			}
+
+			body {
+				height: 100%;
+				margin: 0;
+			}
+
+			.navbar ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #121c21;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: 9998;
+
+			}
+
+			.navbar li {
+				float: right;
+			}
+
+			.navbar li a {
+				display: block;
+				color: #979b9d;
+				font-family: 'Press Start 2P';
+				font-size: 0.6vw;
+				text-align: center;
+				padding: 2.1vh 1vh;
+				text-decoration: none;
+
+			}
+
+			.navbar h1 {
+				float: left;
+				padding-left: 1vh;
+				margin-top: 2vh;
+				display: block;
+				color: #fdd54f;
+				font-family: 'Press Start 2P';
+				font-size: 0.6vw;
+				text-align: left;
+				text-decoration: none;
+			}
+
+			.navbar li a:hover:not(.active) {
+				color: #ffffff;
+			}
+
+			.navbar .active {
+				color: #fdd54f;
+			}
+
+			.cover {
+				width: 100%;
+				height: 100vh;
+				background: linear-gradient(to right, #121c21 50%, #fdd54f 50%)
+			}
+
+			.cover h1 {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-family: 'Press Start 2P';
+				font-size: 2.5vw;
+				color: #ffffff;
+				font-weight: 100;
+
+				transform: translate(-43%, -50%);
+			}
+
+			.cover h2 {
+				position: absolute;
+				top: 60%;
+				left: 50%;
+				font-family: 'Press Start 2P';
+				font-size: 0.8vw;
+				font-weight: 100;
+				color: #ffffff;
+				transform: translate(-43.7%);
+			}
+
+			.links {
+				position: fixed;
+				left: 0.6vw;
+				top: 85vh;
+				height: 13.2vh;
+				width: 2vw;
+				background-color: #121c21;
+				outline: 0.1vw solid #1d2e35;
+				outline-offset: -0.2vw;
+				z-index: 9999;
+
+			}
+
+			.about {
+				position: relative;
+				background-color: #1d2e35;
+				width: 100%;
+				height: 51vh;
+			}
+
+			.skills {
+				position: relative;
+				background-color: #121c21;
+				width: 100%;
+				height: 100vh;
+
+			}
+
+			.achievements {
+				background-color: #1d2e35;
+				width: 100%;
+				height: 68vh;
+				position: relative;
+			}
+
+			.footer1 {
+				position: relative;
+				background-color: #fdd54f;
+				width: 100%;
+				height: 13vh;
+			}
+
+			#copy {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 25%;
+				font-size: 0.9375vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-75%, -50%);
+
+			}
+
+			#email {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-size: 0.9375vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+			}
+
+			#phone {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 75%;
+				font-size: 0.9375vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-25%, -50%);
+
+			}
+
+
+			#aboutScroll {
+				position: absolute;
+				top: 70%;
+				left: 50%;
+				transform: translate(-50%);
+			}
+
+			#aboutScroll:hover {
+				opacity: 0.3;
+
+			}
+
+			#scrollImage {
+				width: 3.90625vw;
+				height: 2.03125vw;
+			}
+
+			#githubLink {
+				position: absolute;
+				top: 10%;
+				left: 50%;
+				width: 1.25vw;
+				height: 1.25vw;
+				transform: translate(-50%);
+			}
+
+			#githubLink:hover {
+				opacity: 0.3;
+			}
+
+			#emailLink {
+				position: absolute;
+				top: 40%;
+				left: 50%;
+				width: 1.25vw;
+				height: 1.25vw;
+				transform: translate(-50%);
+			}
+
+			#emailLink:hover {
+				opacity: 0.3;
+			}
+
+			#replLink {
+				position: absolute;
+				top: 67%;
+				left: 50%;
+				width: 1.25vw;
+				height: 1.25vw;
+				transform: translate(-50%);
+			}
+
+			#replLink:hover {
+				opacity: 0.3;
+			}
+
+			#aboutImage {
+				position: absolute;
+				left: 32%;
+				top: 3vh;
+				width: 12.421875vw;
+				height: 16.2109375vw;
+			}
+
+			.about h1 {
+				font-family: "Press Start 2P";
+				color: #fdd54f;
+				position: absolute;
+				font-size: 1.25vw;
+				font-weight: 100;
+				top: 3vh;
+				left: 50%;
+			}
+
+			.about p {
+				font-family: "Russo One";
+				font-size: 0.703125vw;
+				color: #979b9d;
+				position: absolute;
+				top: 12vh;
+				left: 50%;
+			}
+
+			.about em {
+				font-style: normal;
+				color: white;
+			}
+
+
+			.projectsButton {
+				position: absolute;
+				left: 50%;
+				top: 39vh;
+				border: 0.234375vw solid #121c21;
+				outline: 0.078125vw solid #1d2e35;
+				outline-offset: -0.1953125vw;
+				background-color: #121c21;
+				color: #fdd54f;
+				padding: 0.78125vw 1.171875vw;
+				font-family: "Press Start 2P";
+				font-size: 0.625vw;
+				cursor: pointer;
+			}
+
+			.projectsButton:hover {
+				color: white;
+			}
+
+			.skills h1 {
+				font-size: 1.25vw;
+				font-family: "Press Start 2P";
+				color: #fdd54f;
+				position: absolute;
+				font-weight: 100;
+				top: 2vh;
+				left: 50%;
+				transform: translate(-50%);
+			}
+
+			.python {
+				left: 50%;
+				top: 15vh;
+				height: 13.5vw;
+				width: 21.484375vw;
+				position: absolute;
+				background-color: #1d2e35;
+				outline: 0.078125vw solid #121c21;
+				outline-offset: -0.1953125vw;
+				transform: translate(-115%);
+			}
+
+			.HTML {
+				left: 50%;
+				top: 15vh;
+				height: 13.5vw;
+				width: 21.484375vw;
+				position: absolute;
+				background-color: #1d2e35;
+				outline: 0.078125vw solid #121c21;
+				outline-offset: -0.1953125vw;
+				transform: translate(15%);
+			}
+
+			.pc {
+				left: 50%;
+				top: 58vh;
+				height: 13.5vw;
+				width: 21.484375vw;
+				position: absolute;
+				background-color: #1d2e35;
+				outline: 0.078125vw solid #121c21;
+				outline-offset: -0.1953125vw;
+				transform: translate(-115%);
+
+			}
+
+			.pspr {
+				left: 50%;
+				top: 58vh;
+				height: 13.5vw;
+				width: 21.484375vw;
+				position: absolute;
+				background-color: #1d2e35;
+				outline: 0.078125vw solid #121c21;
+				outline-offset: -0.1953125vw;
+				transform: translate(15%);
+
+			}
+
+			#pImage {
+				position: absolute;
+				left: 50%;
+				top: 7%;
+				height: 1.953125vw;
+				width: 3.90625vw;
+				transform: translate(-50%);
+			}
+
+			#tImage {
+				position: absolute;
+				left: 50%;
+				top: 7%;
+				height: 1.953125vw;
+				width: 1.953125vw;
+				transform: translate(-50%);
+			}
+
+			#hImage {
+				position: absolute;
+				left: 50%;
+				top: 5%;
+				width: 7.8125vw;
+				height: 2.421875vw;
+				transform: translate(-50%);
+			}
+
+			#prImage {
+				position: absolute;
+				left: 50%;
+				top: 7%;
+				width: 3.90625vw;
+				height: 1.71875vw;
+				transform: translate(-50%);
+			}
+
+			.python p {
+				font-family: "Russo One";
+				font-size: 0.73vw;
+				color: #979b9d;
+				position: absolute;
+				text-align: center;
+				top: 20%;
+				left: 50%;
+				width: 95%;
+				transform: translate(-50%);
+			}
+
+			.python em {
+				font-style: normal;
+				color: white;
+			}
+
+			.pc p {
+				font-family: "Russo One";
+				font-size: 0.73vw;
+				color: #979b9d;
+				position: absolute;
+				text-align: center;
+				top: 20%;
+				left: 50%;
+				width: 95%;
+				transform: translate(-50%);
+			}
+
+			.pc em {
+				font-style: normal;
+				color: white;
+			}
+
+			.HTML p {
+				font-family: "Russo One";
+				font-size: 0.73vw;
+				color: #979b9d;
+				position: absolute;
+				text-align: center;
+				top: 20%;
+				left: 50%;
+				width: 95%;
+				transform: translate(-50%);
+			}
+
+			.HTML em {
+				font-style: normal;
+				color: white;
+			}
+
+			.pspr p {
+				font-family: "Russo One";
+				font-size: 0.73vw;
+				color: #979b9d;
+				position: absolute;
+				text-align: center;
+				top: 20%;
+				left: 50%;
+				width: 95%;
+				transform: translate(-50%);
+			}
+
+			.pspr em {
+				font-style: normal;
+				color: white;
+			}
+
+			.achievementsRect {
+				left: 35%;
+				top: 50%;
+				height: 39vh;
+				width: 19.53125vw;
+				position: absolute;
+				background-color: #121c21;
+				outline: 0.078125vw solid #1d2e35;
+				outline-offset: -0.1953125vw;
+				transform: translate(-50%, -50%);
+			}
+
+			.achievementsRect2 {
+				left: 65%;
+				top: 50%;
+				height: 39vh;
+				width: 19.53125vw;
+				position: absolute;
+				background-color: #121c21;
+				outline: 0.078125vw solid #1d2e35;
+				outline-offset: -0.1953125vw;
+				transform: translate(-50%, -50%);
+
+			}
+
+			.achievements h1 {
+				font-size: 1.25vw;
+				font-family: "Press Start 2P";
+				color: #fdd54f;
+				position: absolute;
+				font-weight: 100;
+				top: 5%;
+				left: 50%;
+				transform: translate(-50%);
+			}
+
+			.achievements h2 {
+				font-size: 0.9375vw;
+				font-family: "Russo One";
+				color: white;
+				position: absolute;
+				font-weight: 100;
+				left: 50%;
+				transform: translate(-50%);
+			}
+
+			* {
+				box-sizing: border-box
+			}
+
+			.container {
+				width: 80%;
+				background-color: #979b9d;
+				position: relative;
+				left: 50%;
+				top: 12%;
+				transform: translate(-50%)
+			}
+
+			.grades1 {
+				padding-top: 0.8vh;
+				padding-bottom: 0.8vh;
+				color: #979b9d;
+			}
+
+			#g1 {
+				font-size: 0.625vw;
+				text-align: left;
+				font-family: "Russo One";
+				position: relative;
+				left: 10%;
+				top: 12%;
+				color: white;
+			}
+
+
+			.cs {
+				width: 100%;
+				background-color: #fdd54f;
+			}
+
+			.ce {
+				width: 100%;
+				background-color: #fdd54f;
+			}
+
+			.ba {
+				width: 98%;
+				background-color: #fdd54f;
+			}
+
+			.law {
+				width: 98%;
+				background-color: #fdd54f;
+			}
+
+			.nowrap {
+				white-space: nowrap;
+			}
+
+			.container2 {
+				width: 80%;
+				background-color: #fdd54f;
+				position: relative;
+				left: 50%;
+				top: 12%;
+				transform: translate(-50%)
+			}
+
+			.grades2 {
+				padding-top: 0.8vh;
+				padding-bottom: 0.8vh;
+				color: #979b9d;
+			}
+
+			#g2 {
+				font-size: 0.625vw;
+				text-align: left;
+				font-family: "Russo One";
+				position: relative;
+				left: 10%;
+				top: 12%;
+				color: white;
+			}
+
+
+			.cs2 {
+				width: 1%;
+				background-color: #979b9d;
+			}
+
+			.ce2 {
+				width: 0%;
+				background-color: #979b9d;
+			}
+
+			.ba2 {
+				width: 2%;
+				background-color: #979b9d;
+			}
+
+			.law2 {
+				width: 2%;
+				background-color: #979b9d;
+			}
+
+			#g9Honor {
+				position: absolute;
+				left: 50%;
+				top: 20%;
+				width: 3.90625vw;
+				height: 3.28125vw;
+				transform: translate(-50%);
+			}
+
+			#g10Honor {
+				position: absolute;
+				left: 50%;
+				top: 35%;
+				width: 3.90625vw;
+				height: 3.28125vw;
+				transform: translate(-50%);
+			}
+
+			#g11Honor {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				width: 3.90625vw;
+				height: 3.28125vw;
+				transform: translate(-50%);
+			}
+
+			#g12Honor {
+				position: absolute;
+				left: 50%;
+				top: 65%;
+				width: 3.90625vw;
+				height: 3.28125vw;
+				transform: translate(-50%);
+			}
+		}
+
+
+
+		@media screen and (max-width: 1920px) and (min-width: 1600px), screen  and (min-width: 1255px) and (max-width: 1366px) and (height: 1024px), screen and (width: 1024px) and (min-height: 653px) and (max-height: 800px) {
+			html {
+			background-color: #121c21;
+			}
+
+
+			body::-webkit-scrollbar {
+				width: 0.4vw;
+				background: #121c21;
+			}
+
+			body::-webkit-scrollbar-thumb {
+				background: #fdd54f;
+				height: 1.171875vw;
+			}
+
+			body::-webkit-scrollbar-track-piece {
+				display: none;
+			}
+
+			html {
+				scroll-behavior: smooth;
+			}
+
+			body {
+				height: 100%;
+				margin: 0;
+			}
+
+			.navbar ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #121c21;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: 9998;
+
+			}
+
+			.navbar li {
+				float: right;
+			}
+
+			.navbar li a {
+				display: block;
+				color: #979b9d;
+				font-family: 'Press Start 2P';
+				font-size: 0.8vw;
+				text-align: center;
+				padding: 2.1vh 1vh;
+				text-decoration: none;
+
+			}
+
+			.navbar h1 {
+				float: left;
+				padding-left: 1vh;
+				margin-top: 2vh;
+				display: block;
+				color: #fdd54f;
+				font-family: 'Press Start 2P';
+				font-size: 0.8vw;
+				text-align: left;
+				text-decoration: none;
+			}
+
+			.navbar li a:hover:not(.active) {
+				color: #ffffff;
+			}
+
+			.navbar .active {
+				color: #fdd54f;
+			}
+
+			.cover {
+				width: 100%;
+				height: 100vh;
+				background: linear-gradient(to right, #121c21 50%, #fdd54f 50%)
+			}
+
+			.cover h1 {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-family: 'Press Start 2P';
+				font-size: 2.8vw;
+				color: #ffffff;
+				font-weight: 100;
+
+				transform: translate(-43%, -50%);
+			}
+
+			.cover h2 {
+				position: absolute;
+				top: 60%;
+				left: 50%;
+				font-family: 'Press Start 2P';
+				font-size: 1.1vw;
+				font-weight: 100;
+				color: #ffffff;
+				transform: translate(-43.7%);
+			}
+
+			.links {
+				position: fixed;
+				left: 0.6vw;
+				top: 85vh;
+				height: 11vh;
+				width: 2.1vw;
+				background-color: #121c21;
+				outline: 0.15vw solid #1d2e35;
+				outline-offset: -0.3vw;
+				z-index: 9999;
+
+			}
+
+			.about {
+				position: relative;
+				background-color: #1d2e35;
+				width: 100%;
+				height: 51vh;
+			}
+
+			.skills {
+				position: relative;
+				background-color: #121c21;
+				width: 100%;
+				height: 100vh;
+
+			}
+
+			.achievements {
+				background-color: #1d2e35;
+				width: 100%;
+				height: 68vh;
+				position: relative;
+			}
+
+			.footer1 {
+				position: relative;
+				background-color: #fdd54f;
+				width: 100%;
+				height: 13vh;
+			}
+
+			#copy {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 25%;
+				font-size: 1.1vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-75%, -50%);
+
+			}
+
+			#email {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-size: 1.1vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+			}
+
+			#phone {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 75%;
+				font-size: 1.1vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-25%, -50%);
+
+			}
+
+			#aboutScroll {
+				position: absolute;
+				top: 70%;
+				left: 50%;
+				transform: translate(-50%);
+			}
+
+			#aboutScroll:hover {
+				opacity: 0.3;
+
+			}
+
+			#scrollImage {
+				width: 3.90625vw;
+				height: 2.03125vw;
+			}
+
+			#githubLink {
+				position: absolute;
+				top: 10%;
+				left: 50%;
+				width: 1.25vw;
+				height: 1.25vw;
+				transform: translate(-50%);
+			}
+
+			#githubLink:hover {
+				opacity: 0.3;
+			}
+
+			#emailLink {
+				position: absolute;
+				top: 40%;
+				left: 50%;
+				width: 1.25vw;
+				height: 1.25vw;
+				transform: translate(-50%);
+			}
+
+			#emailLink:hover {
+				opacity: 0.3;
+			}
+
+			#replLink {
+				position: absolute;
+				top: 67%;
+				left: 50%;
+				width: 1.25vw;
+				height: 1.25vw;
+				transform: translate(-50%);
+			}
+
+			#replLink:hover {
+				opacity: 0.3;
+			}
+
+			#aboutImage {
+				position: absolute;
+				left: 29%;
+				top: 5vh;
+				width: 17.521875vw;
+				height: 21.3109375vw;
+			}
+
+			.about h1 {
+				font-size: 1.5vw;
+				font-family: "Press Start 2P";
+				color: #fdd54f;
+				position: absolute;
+				font-weight: 100;
+				top: 3vh;
+				left: 50%;
+
+			}
+
+			.about p {
+				font-family: "Russo One";
+				font-size: 0.903125vw;
+				color: #979b9d;
+				position: absolute;
+				top: 12vh;
+				left: 50%;
+			}
+
+			.about em {
+				font-style: normal;
+				color: white;
+			}
+
+
+			.projectsButton {
+				position: absolute;
+				left: 50%;
+				top: 37vh;
+				border: 0.514375vw solid #121c21;
+				outline: 0.158125vw solid #1d2e35;
+				outline-offset: -0.3353125vw;
+				background-color: #121c21;
+				color: #fdd54f;
+				padding: 1.18125vw 1.471875vw;
+				font-family: "Press Start 2P";
+				font-size: 0.925vw;
+				cursor: pointer;
+			}
+
+			.projectsButton:hover {
+				color: white;
+			}
+
+			.skills h1 {
+				font-size: 1.5vw;
+				font-family: "Press Start 2P";
+				color: #fdd54f;
+				position: absolute;
+				font-weight: 100;
+				top: 5%;
+				left: 50%;
+				transform: translate(-50%);
+			}
+
+			.python {
+				left: 50%;
+				top: 15vh;
+				height: 17.5vw;
+				width: 25.484375vw;
+				position: absolute;
+				background-color: #1d2e35;
+				outline: 0.158125vw solid #121c21;
+				outline-offset: -0.3353125vw;
+				transform: translate(-115%);
+			}
+
+			.HTML {
+				left: 50%;
+				top: 15vh;
+				height: 17.5vw;
+				width: 25.484375vw;
+				position: absolute;
+				background-color: #1d2e35;
+				outline: 0.158125vw solid #121c21;
+				outline-offset: -0.3353125vw;
+				transform: translate(15%);
+			}
+
+			.pc {
+				left: 50%;
+				top: 58vh;
+				height: 17.5vw;
+				width: 25.484375vw;
+				position: absolute;
+				background-color: #1d2e35;
+				outline: 0.158125vw solid #121c21;
+				outline-offset: -0.3353125vw;
+				transform: translate(-115%);
+
+			}
+
+			.pspr {
+				left: 50%;
+				top: 58vh;
+				height: 17.5vw;
+				width: 25.484375vw;
+				position: absolute;
+				background-color: #1d2e35;
+				outline: 0.158125vw solid #121c21;
+				outline-offset: -0.3353125vw;
+				transform: translate(15%);
+
+			}
+
+			#pImage {
+				position: absolute;
+				left: 50%;
+				top: 7%;
+				height: 2.953125vw;
+				width: 5.90625vw;
+				transform: translate(-50%);
+			}
+
+			#tImage {
+				position: absolute;
+				left: 50%;
+				top: 7%;
+				height: 2.953125vw;
+				width: 2.953125vw;
+				transform: translate(-50%);
+			}
+
+			#hImage {
+				position: absolute;
+				left: 50%;
+				top: 5%;
+				width: 8.6125vw;
+				height: 2.821875vw;
+				transform: translate(-50%);
+			}
+
+			#prImage {
+				position: absolute;
+				left: 50%;
+				top: 7%;
+				width: 5.859375vw;
+				height: 2.578125vw;
+				transform: translate(-50%);
+			}
+
+			.python p {
+				font-family: "Russo One";
+				font-size: 0.93vw;
+				color: #979b9d;
+				position: absolute;
+				text-align: center;
+				top: 20%;
+				left: 50%;
+				width: 95%;
+				transform: translate(-50%);
+			}
+
+			.python em {
+				font-style: normal;
+				color: white;
+			}
+
+			.pc p {
+				font-family: "Russo One";
+				font-size: 0.93vw;
+				color: #979b9d;
+				position: absolute;
+				text-align: center;
+				top: 20%;
+				left: 50%;
+				width: 95%;
+				transform: translate(-50%);
+			}
+
+			.pc em {
+				font-style: normal;
+				color: white;
+			}
+
+			.HTML p {
+				font-family: "Russo One";
+				font-size: 0.93vw;
+				color: #979b9d;
+				position: absolute;
+				text-align: center;
+				top: 20%;
+				left: 50%;
+				width: 95%;
+				transform: translate(-50%);
+			}
+
+			.HTML em {
+				font-style: normal;
+				color: white;
+			}
+
+			.pspr p {
+				font-family: "Russo One";
+				font-size: 0.93vw;
+				color: #979b9d;
+				position: absolute;
+				text-align: center;
+				top: 20%;
+				left: 50%;
+				width: 95%;
+				transform: translate(-50%);
+			}
+
+			.pspr em {
+				font-style: normal;
+				color: white;
+			}
+
+			.achievementsRect {
+				left: 30%;
+				top: 50%;
+				height: 39vh;
+				width: 25.53125vw;
+				position: absolute;
+				background-color: #121c21;
+				outline: 0.078125vw solid #1d2e35;
+				outline-offset: -0.1953125vw;
+				transform: translate(-50%, -50%);
+			}
+
+			.achievementsRect2 {
+				left: 70%;
+				top: 50%;
+				height: 39vh;
+				width: 25.53125vw;
+				position: absolute;
+				background-color: #121c21;
+				outline: 0.078125vw solid #1d2e35;
+				outline-offset: -0.1953125vw;
+				transform: translate(-50%, -50%);
+
+			}
+
+			.achievements h1 {
+				font-size: 1.5vw;
+				font-family: "Press Start 2P";
+				color: #fdd54f;
+				position: absolute;
+				font-weight: 100;
+				top: 5%;
+				left: 50%;
+				transform: translate(-50%);
+			}
+
+			.achievements h2 {
+				font-size: 1.5375vw;
+				font-family: "Russo One";
+				color: white;
+				position: absolute;
+				font-weight: 100;
+				left: 50%;
+				transform: translate(-50%);
+			}
+
+			* {
+				box-sizing: border-box
+			}
+
+			.container {
+				width: 80%;
+				background-color: #979b9d;
+				position: relative;
+				left: 50%;
+				top: 14%;
+				transform: translate(-50%)
+			}
+
+			.grades1 {
+				padding-top: 0.8vh;
+				padding-bottom: 0.8vh;
+				color: #979b9d;
+			}
+
+			#g1 {
+				font-size: 0.925vw;
+				text-align: left;
+				font-family: "Russo One";
+				position: relative;
+				left: 10%;
+				top: 14%;
+				color: white;
+			}
+
+
+			.cs {
+				width: 100%;
+				background-color: #fdd54f;
+			}
+
+			.ce {
+				width: 100%;
+				background-color: #fdd54f;
+			}
+
+			.ba {
+				width: 98%;
+				background-color: #fdd54f;
+			}
+
+			.law {
+				width: 98%;
+				background-color: #fdd54f;
+			}
+
+			.nowrap {
+				white-space: nowrap;
+			}
+
+			.container2 {
+				width: 80%;
+				background-color: #fdd54f;
+				position: relative;
+				left: 50%;
+				top: 14%;
+				transform: translate(-50%)
+			}
+
+			.grades2 {
+				padding-top: 0.8vh;
+				padding-bottom: 0.8vh;
+				color: #979b9d;
+			}
+
+			#g2 {
+				font-size: 0.925vw;
+				text-align: left;
+				font-family: "Russo One";
+				position: relative;
+				left: 10%;
+				top: 14%;
+				color: white;
+			}
+
+
+			.cs2 {
+				width: 1%;
+				background-color: #979b9d;
+			}
+
+			.ce2 {
+				width: 0%;
+				background-color: #979b9d;
+			}
+
+			.ba2 {
+				width: 2%;
+				background-color: #979b9d;
+			}
+
+			.law2 {
+				width: 2%;
+				background-color: #979b9d;
+			}
+
+			#g9Honor {
+				position: absolute;
+				left: 50%;
+				top: 20%;
+				width: 5.859375vw;
+				height: 4.921875vw;
+				transform: translate(-50%);
+			}
+
+			#g10Honor {
+				position: absolute;
+				left: 50%;
+				top: 35%;
+				width: 5.859375vw;
+				height: 4.921875vw;
+				transform: translate(-50%);
+			}
+
+			#g11Honor {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				width: 5.859375vw;
+				height: 4.921875vw;
+				transform: translate(-50%);
+			}
+
+			#g12Honor {
+				position: absolute;
+				left: 50%;
+				top: 65%;
+				width: 5.859375vw;
+				height: 4.921875vw;
+				transform: translate(-50%);
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		@media screen and (width: 1536px) and (height: 2048px), screen and (width: 1080px) and (height: 1620px) {
+				html {
+			background-color: #121c21;
+			}
+
+			.navbar li a {
+				font-size: 1.9vw;
+				padding: 2.1vh 1vh;
+			}
+			.navbar h1 {
+				font-size: 1.9vw;
+			}
+			.cover h1 {
+				font-size: 5vw;
+			}
+			.cover h2 {
+				font-size: 2.5vw;
+			}
+			#scrollImage {
+				width: 8.90625vw;
+				height: 5.03125vw;
+			}
+			.links {
+				height: 16vh;
+				width: 6vw;
+				top: 80%;
+				outline: 0.349125vw solid #1d2e35;
+				outline-offset: -0.5953125vw;
+			}
+
+			#githubLink {
+				width: 3.8625vw;
+				height: 3.8625vw;
+			}
+
+			#emailLink {
+				width: 3.8625vw;
+				height: 3.8625vw;
+			}
+
+			#replLink {
+				width: 3.8625vw;
+				height: 3.8625vw;
+			}
+
+			.about h1 {
+				font-size: 4vw;
+			}
+
+			.about p {
+				top: 9vh;
+				font-size: 2vw;
+			}
+
+			#aboutImage {
+				left: 10%;
+				top: 8vh;
+				width: 36.521875vw;
+				height: 44.3109375vw;
+			}
+
+			.projectsButton {
+				top: 40vh;
+				padding: 2.90125vw 1.771875vw;
+				font-size: 2.5vw;
+				outline: 0.349125vw solid #1d2e35;
+				outline-offset: -0.5953125vw;
+			}
+
+			.skills h1 {
+				top: 2.8vh;
+				font-size: 4vw;
+			}
+
+			.python {
+				left: 55%;
+				height: 50.5vw;
+				width: 39.484375vw;
+				outline: 0.578125vw solid #121c21;
+				outline-offset: -1.1953125vw;
+			}
+
+			.HTML {
+				left: 45%;
+				height: 50.5vw;
+				width: 39.484375vw;
+				outline: 0.578125vw solid #121c21;
+				outline-offset: -1.1953125vw;
+			}
+
+			.pc {
+				left: 55%;
+				height: 50.5vw;
+				width: 39.484375vw;
+				outline: 0.578125vw solid #121c21;
+				outline-offset: -1.1953125vw;
+			}
+
+			.pspr {
+				left: 45%;
+				height: 50.5vw;
+				width: 39.484375vw;
+				outline: 0.578125vw solid #121c21;
+				outline-offset: -1.1953125vw;
+			}
+
+			#pImage {
+				height: 6.953125vw;
+				width: 13.90625vw;
+			}
+
+			#tImage {
+				height: 6.953125vw;
+				width: 6.953125vw;
+			}
+
+			#hImage {
+				width: 18.603vw;
+				height: 6.09525vw;
+			}
+
+			#prImage {
+				width: 12.65625vw;
+				height: 5.56875vw;
+			}
+
+			.python p {
+				font-size: 2vw;
+			}
+
+			.pc p {
+				font-size: 2vw;
+			}
+
+			.HTML p {
+				font-size: 2vw;
+			}
+
+			.pspr p {
+				font-size: 2vw;
+			}
+			.achievements {
+				height: 110vh;
+			}
+			.achievements h1 {
+				top: 3%;
+				font-size: 4vw;
+			}
+
+			.achievements h2 {
+				top: 5%;
+				font-size: 3.7375vw;
+			}
+			.achievementsRect {
+				top: 28%;
+				left: 50%;
+				height: 37vh;
+				width: 70vw;
+				outline: 1.078125vw solid #1d2e35;
+				outline-offset: -3.1953125vw;
+			}
+			.achievementsRect2 {
+				left: 50%;
+				top: 78%;
+				height: 37vh;
+				width: 70vw;
+				outline: 1.078125vw solid #1d2e35;
+				outline-offset: -3.1953125vw;
+
+			}
+
+
+			#g1 {
+				top: 16%;
+				font-size: 2.1vw;
+			}
+			.container {
+				top: 16%;
+			}
+			.container2 {
+				top: 16%;
+			}
+
+			#g2 {
+				top: 16%;
+				font-size: 2.1vw;	
+			}
+
+			#g9Honor {
+				left: 12%;
+				top: 48%;
+				width: 16.859375vw;
+				height: 12.921875vw;
+			}
+
+			#g10Honor {
+				left: 37%;
+				top: 48%;
+				width: 16.859375vw;
+				height: 12.921875vw;
+			}
+
+			#g11Honor {
+				left: 63%;
+				top: 48%;
+				width: 16.859375vw;
+				height: 12.921875vw;
+			}
+
+			#g12Honor {
+				left: 88%;
+				top: 48%;
+				width: 16.859375vw;
+				height: 12.921875vw;
+			}
+			
+
+			#copy {
+				margin: 0;
+				position: absolute;
+				top: 25%;
+				left: 50%;
+				font-size: 2.5vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+				white-space: nowrap;
+
+			}
+
+			#email {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-size: 2.5vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+				white-space: nowrap;
+
+			}
+
+			#phone {
+				margin: 0;
+				position: absolute;
+				top: 75%;
+				left: 50%;
+				font-size: 2.5vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+				white-space: nowrap;
+
+			}
+
+		}
+		
+		@media screen and (max-width: 1366px) and (height: 625px) {
+			html {
+			background-color: #121c21;
+			}
+			.navbar li a {
+				font-size: 1.1vw;
+				padding: 2.8vh 1vh;
+			}
+			.navbar h1 {
+				font-size: 1.1vw;
+			}
+			.links {
+				top: 80vh;
+				height: 15vh;
+				width: 2.5vw;
+			}
+
+			.about {
+				height: 70vh;
+			}
+			.about h1 {
+				font-size: 2.2vw;
+			}
+
+			.about p {
+				top: 12vh;
+				font-size: 1.2vw;
+			}
+
+			#githubLink {
+				width: 1.6vw;
+				height: 1.6vw;
+			}
+
+			#emailLink {
+				width: 1.6vw;
+				height: 1.6vw;
+			}
+
+			#replLink {
+				width: 1.6vw;
+				height: 1.6vw;
+			}
+
+			#aboutImage {
+				left: 25%;
+				top: 5vh;
+				width: 20.521875vw;
+				height: 24.3109375vw;
+			}
+
+			.projectsButton {
+				top: 50vh;
+				padding: 1.50125vw 1.971875vw;
+				font-size: 1.2vw;
+				outline: 0.349125vw solid #1d2e35;
+				outline-offset: -0.5953125vw;
+			}
+
+			.skills h1 {
+				top: 2vh;
+				font-size: 2.2vw;
+			}
+
+		.skills {
+			height: 115vh;
+		}
+
+			.python{
+				top: 15vh;
+				height: 21.5vw;
+				width: 29.484375vw;
+			}
+			.HTML {
+				top: 15vh;
+				height: 21.5vw;
+				width: 29.484375vw;	
+			}
+			.pc {
+				top: 65vh;
+				height: 21.5vw;
+				width: 29.484375vw;
+			}
+
+			.pspr {
+				top: 65vh;
+				height: 21.5vw;
+				width: 29.484375vw;
+			}
+
+			.python p {
+				font-size: 1.1vw
+			}
+			.HTML p {
+				font-size: 1.1vw
+			}
+
+			.pc p {
+				font-size: 1.1vw
+			}
+			.pspr p {
+				font-size: 1.1vw
+			}
+
+			#g1 {
+				font-size: 1.2vw;
+			}
+			#g2 {
+				font-size: 1.2vw;
+			}
+			.achievements {
+				height: 90vh;
+			}
+			.achievementsRect {
+				top: 55%;
+				height: 55vh;
+				outline: 0.349125vw solid #1d2e35;
+				outline-offset: -0.5953125vw;
+				
+			}
+			.achievementsRect2 {
+				top: 55%;
+				height: 55vh;
+				outline: 0.349125vw solid #1d2e35;
+				outline-offset: -0.5953125vw;
+			}
+
+
+			#email {
+				font-size: 1.35vw;
+			}
+
+			#copy {
+				font-size: 1.35vw;
+			}
+
+			#phone {
+				font-size: 1.35vw;
+			}
+
+
+		}
+
+		}
+
+
+
+
+		@media screen and (max-width: 1366px) {
+			html {
+			background-color: #121c21;
+			}
+			.navbar li a {
+				font-size: 1vw;
+			}
+
+			.navbar h1 {
+				font-size: 1vw;
+			}
+
+			.links {
+				height: 11vh;
+				width: 3vw;
+			}
+
+			#githubLink {
+				width: 1.5625vw;
+				height: 1.5625vw;
+			}
+
+			#emailLink {
+				width: 1.5625vw;
+				height: 1.5625vw;
+			}
+
+			#replLink {
+				width: 1.5625vw;
+				height: 1.5625vw;
+			}
+
+			.about h1 {
+				font-size: 2.2vw;
+			}
+
+			.about p {
+				top: 9vh;
+				font-size: 1.4vw;
+			}
+
+			#aboutImage {
+				left: 23%;
+				top: 5vh;
+				width: 22.521875vw;
+				height: 26.3109375vw;
+			}
+
+			.projectsButton {
+				top: 40vh;
+				padding: 1.50125vw 1.971875vw;
+				font-size: 1.2vw;
+				outline: 0.349125vw solid #1d2e35;
+				outline-offset: -0.5953125vw;
+			}
+
+			.skills h1 {
+				top: 2.8vh;
+				font-size: 2.2vw;
+
+			}
+
+			.python {
+				height: 21.5vw;
+				width: 29.484375vw;
+				outline: 0.349125vw solid #121c21;
+				outline-offset: -0.5953125vw;
+			}
+
+			.HTML {
+				height: 21.5vw;
+				width: 29.484375vw;
+				outline: 0.349125vw solid #121c21;
+				outline-offset: -0.5953125vw;
+			}
+
+			.pc {
+				height: 21.5vw;
+				width: 29.484375vw;
+				outline: 0.349125vw solid #121c21;
+				outline-offset: -0.5953125vw;
+			}
+
+			.pspr {
+				height: 21.5vw;
+				width: 29.484375vw;
+				outline: 0.349125vw solid #121c21;
+				outline-offset: -0.5953125vw;
+			}
+
+			#pImage {
+				height: 3.953125vw;
+				width: 7.90625vw;
+			}
+
+			#tImage {
+				height: 3.953125vw;
+				width: 3.953125vw;
+			}
+
+			#hImage {
+				width: 10.335vw;
+				height: 3.38625vw;
+			}
+
+			#prImage {
+				width: 7.03125vw;
+				height: 3.09375vw;
+			}
+
+			.python p {
+				font-size: 1.1vw;
+			}
+
+			.pc p {
+				font-size: 1.1vw;
+			}
+
+			.HTML p {
+				font-size: 1.1vw;
+			}
+
+			.pspr p {
+				font-size: 1.1vw;
+			}
+
+			.achievements h1 {
+				font-size: 2.2vw;
+			}
+
+			.achievements h2 {
+				font-size: 1.7375vw;
+			}
+			.achievementsRect {
+				outline: 0.349125vw solid #1d2e35;
+				outline-offset: -0.5953125vw;
+			}
+			.achievementsRect2 {
+				outline: 0.349125vw solid #1d2e35;
+				outline-offset: -0.5953125vw;
+			}
+			* {
+				box-sizing: border-box
+			}
+
+			#g1 {
+				font-size: 1.2vw;
+			}
+
+			.container2 {
+				width: 80%;
+				background-color: #fdd54f;
+				position: relative;
+				left: 50%;
+				top: 14%;
+				transform: translate(-50%)
+			}
+
+			#g2 {
+				font-size: 1.2vw;
+			}
+
+			#g9Honor {
+				position: absolute;
+				left: 50%;
+				top: 20%;
+				width: 5.859375vw;
+				height: 4.921875vw;
+				transform: translate(-50%);
+			}
+
+			#g10Honor {
+				position: absolute;
+				left: 50%;
+				top: 35%;
+				width: 5.859375vw;
+				height: 4.921875vw;
+				transform: translate(-50%);
+			}
+
+			#g11Honor {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				width: 5.859375vw;
+				height: 4.921875vw;
+				transform: translate(-50%);
+			}
+
+			#g12Honor {
+				position: absolute;
+				left: 50%;
+				top: 65%;
+				width: 5.859375vw;
+				height: 4.921875vw;
+				transform: translate(-50%);
+			}
+
+			#email {
+				font-size: 1.35vw;
+			}
+
+			#copy {
+				font-size: 1.35vw;
+			}
+
+			#phone {
+				font-size: 1.35vw;
+			}
+
+
+		}
+
+
+
+
+
+		@media screen and (width: 1024px ) and (min-height: 1255px) and (max-height: 1366px){
+			html {
+			background-color: #121c21;
+			}
+
+			.navbar li a {
+				font-size: 1.9vw;
+				padding: 2.1vh 1vh;
+			}
+			.navbar h1 {
+				font-size: 1.9vw;
+			}
+			.cover h1 {
+				font-size: 5vw;
+			}
+			.cover h2 {
+				font-size: 2.5vw;
+			}
+			#scrollImage {
+				width: 8.90625vw;
+				height: 5.03125vw;
+			}
+			.links {
+				height: 16vh;
+				width: 6vw;
+				top: 80%;
+				outline: 0.349125vw solid #1d2e35;
+				outline-offset: -0.5953125vw;
+			}
+
+			#githubLink {
+				width: 3.8625vw;
+				height: 3.8625vw;
+			}
+
+			#emailLink {
+				width: 3.8625vw;
+				height: 3.8625vw;
+			}
+
+			#replLink {
+				width: 3.8625vw;
+				height: 3.8625vw;
+			}
+
+			.about h1 {
+				font-size: 4vw;
+			}
+
+			.about p {
+				top: 9vh;
+				font-size: 2vw;
+			}
+
+			#aboutImage {
+				left: 10%;
+				top: 8vh;
+				width: 36.521875vw;
+				height: 44.3109375vw;
+			}
+
+			.projectsButton {
+				top: 40vh;
+				padding: 2.90125vw 1.771875vw;
+				font-size: 2.5vw;
+				outline: 0.349125vw solid #1d2e35;
+				outline-offset: -0.5953125vw;
+			}
+
+			.skills h1 {
+				top: 2.8vh;
+				font-size: 4vw;
+			}
+
+			.python {
+				left: 55%;
+				height: 50.5vw;
+				width: 39.484375vw;
+				outline: 0.578125vw solid #121c21;
+				outline-offset: -1.1953125vw;
+			}
+
+			.HTML {
+				left: 45%;
+				height: 50.5vw;
+				width: 39.484375vw;
+				outline: 0.578125vw solid #121c21;
+				outline-offset: -1.1953125vw;
+			}
+
+			.pc {
+				left: 55%;
+				height: 50.5vw;
+				width: 39.484375vw;
+				outline: 0.578125vw solid #121c21;
+				outline-offset: -1.1953125vw;
+			}
+
+			.pspr {
+				left: 45%;
+				height: 50.5vw;
+				width: 39.484375vw;
+				outline: 0.578125vw solid #121c21;
+				outline-offset: -1.1953125vw;
+			}
+
+			#pImage {
+				height: 6.953125vw;
+				width: 13.90625vw;
+			}
+
+			#tImage {
+				height: 6.953125vw;
+				width: 6.953125vw;
+			}
+
+			#hImage {
+				width: 18.603vw;
+				height: 6.09525vw;
+			}
+
+			#prImage {
+				width: 12.65625vw;
+				height: 5.56875vw;
+			}
+
+			.python p {
+				font-size: 2vw;
+			}
+
+			.pc p {
+				font-size: 2vw;
+			}
+
+			.HTML p {
+				font-size: 2vw;
+			}
+
+			.pspr p {
+				font-size: 2vw;
+			}
+			.achievements {
+				height: 110vh;
+			}
+			.achievements h1 {
+				top: 3%;
+				font-size: 4vw;
+			}
+
+			.achievements h2 {
+				top: 5%;
+				font-size: 3.7375vw;
+			}
+			.achievementsRect {
+				top: 28%;
+				left: 50%;
+				height: 37vh;
+				width: 70vw;
+				outline: 1.078125vw solid #1d2e35;
+				outline-offset: -3.1953125vw;
+			}
+			.achievementsRect2 {
+				left: 50%;
+				top: 78%;
+				height: 37vh;
+				width: 70vw;
+				outline: 1.078125vw solid #1d2e35;
+				outline-offset: -3.1953125vw;
+
+			}
+
+
+			#g1 {
+				top: 16%;
+				font-size: 2.1vw;
+			}
+			.container {
+				top: 16%;
+			}
+			.container2 {
+				top: 16%;
+			}
+
+			#g2 {
+				top: 16%;
+				font-size: 2.1vw;	
+			}
+
+			#g9Honor {
+				left: 12%;
+				top: 48%;
+				width: 16.859375vw;
+				height: 12.921875vw;
+			}
+
+			#g10Honor {
+				left: 37%;
+				top: 48%;
+				width: 16.859375vw;
+				height: 12.921875vw;
+			}
+
+			#g11Honor {
+				left: 63%;
+				top: 48%;
+				width: 16.859375vw;
+				height: 12.921875vw;
+			}
+
+			#g12Honor {
+				left: 88%;
+				top: 48%;
+				width: 16.859375vw;
+				height: 12.921875vw;
+			}
+			
+
+			#copy {
+				margin: 0;
+				position: absolute;
+				top: 25%;
+				left: 50%;
+				font-size: 2.5vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+				white-space: nowrap;
+
+			}
+
+			#email {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-size: 2.5vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+				white-space: nowrap;
+
+			}
+
+			#phone {
+				margin: 0;
+				position: absolute;
+				top: 75%;
+				left: 50%;
+				font-size: 2.5vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+				white-space: nowrap;
+
+			}
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+	@media screen and (width: 1080px ) and (height: 1920px ), screen and (width: 1080px) and (height:1809px ) {
+			html {
+			background-color: #121c21;
+			}
+
+			.navbar li a {
+				font-size: 1.9vw;
+				padding: 2.1vh 1vh;
+			}
+			.navbar h1 {
+				font-size: 1.9vw;
+			}
+			.cover h1 {
+				font-size: 5vw;
+			}
+			.cover h2 {
+				font-size: 2.5vw;
+			}
+			#scrollImage {
+				width: 8.90625vw;
+				height: 5.03125vw;
+			}
+			.links {
+				height: 16vh;
+				width: 6vw;
+				top: 80%;
+				outline: 0.349125vw solid #1d2e35;
+				outline-offset: -0.5953125vw;
+			}
+
+			#githubLink {
+				width: 3.8625vw;
+				height: 3.8625vw;
+			}
+
+			#emailLink {
+				width: 3.8625vw;
+				height: 3.8625vw;
+			}
+
+			#replLink {
+				width: 3.8625vw;
+				height: 3.8625vw;
+			}
+
+			.about h1 {
+				font-size: 4vw;
+			}
+
+			.about p {
+				top: 9vh;
+				font-size: 2vw;
+			}
+
+			#aboutImage {
+				left: 10%;
+				top: 8vh;
+				width: 36.521875vw;
+				height: 44.3109375vw;
+			}
+
+			.projectsButton {
+				top: 40vh;
+				padding: 2.90125vw 1.771875vw;
+				font-size: 2.5vw;
+				outline: 0.349125vw solid #1d2e35;
+				outline-offset: -0.5953125vw;
+			}
+
+			.skills h1 {
+				top: 2.8vh;
+				font-size: 4vw;
+			}
+
+			.python {
+				left: 55%;
+				height: 50.5vw;
+				width: 39.484375vw;
+				outline: 0.578125vw solid #121c21;
+				outline-offset: -1.1953125vw;
+			}
+
+			.HTML {
+				left: 45%;
+				height: 50.5vw;
+				width: 39.484375vw;
+				outline: 0.578125vw solid #121c21;
+				outline-offset: -1.1953125vw;
+			}
+
+			.pc {
+				left: 55%;
+				height: 50.5vw;
+				width: 39.484375vw;
+				outline: 0.578125vw solid #121c21;
+				outline-offset: -1.1953125vw;
+			}
+
+			.pspr {
+				left: 45%;
+				height: 50.5vw;
+				width: 39.484375vw;
+				outline: 0.578125vw solid #121c21;
+				outline-offset: -1.1953125vw;
+			}
+
+			#pImage {
+				height: 6.953125vw;
+				width: 13.90625vw;
+			}
+
+			#tImage {
+				height: 6.953125vw;
+				width: 6.953125vw;
+			}
+
+			#hImage {
+				width: 18.603vw;
+				height: 6.09525vw;
+			}
+
+			#prImage {
+				width: 12.65625vw;
+				height: 5.56875vw;
+			}
+
+			.python p {
+				font-size: 2vw;
+			}
+
+			.pc p {
+				font-size: 2vw;
+			}
+
+			.HTML p {
+				font-size: 2vw;
+			}
+
+			.pspr p {
+				font-size: 2vw;
+			}
+			.achievements {
+				height: 110vh;
+			}
+			.achievements h1 {
+				top: 3%;
+				font-size: 4vw;
+			}
+
+			.achievements h2 {
+				top: 5%;
+				font-size: 3.7375vw;
+			}
+			.achievementsRect {
+				top: 28%;
+				left: 50%;
+				height: 37vh;
+				width: 70vw;
+				outline: 1.078125vw solid #1d2e35;
+				outline-offset: -3.1953125vw;
+			}
+			.achievementsRect2 {
+				left: 50%;
+				top: 78%;
+				height: 37vh;
+				width: 70vw;
+				outline: 1.078125vw solid #1d2e35;
+				outline-offset: -3.1953125vw;
+
+			}
+
+
+			#g1 {
+				top: 16%;
+				font-size: 2.1vw;
+			}
+			.container {
+				top: 16%;
+			}
+			.container2 {
+				top: 16%;
+			}
+
+			#g2 {
+				top: 16%;
+				font-size: 2.1vw;	
+			}
+
+			#g9Honor {
+				left: 12%;
+				top: 48%;
+				width: 16.859375vw;
+				height: 12.921875vw;
+			}
+
+			#g10Honor {
+				left: 37%;
+				top: 48%;
+				width: 16.859375vw;
+				height: 12.921875vw;
+			}
+
+			#g11Honor {
+				left: 63%;
+				top: 48%;
+				width: 16.859375vw;
+				height: 12.921875vw;
+			}
+
+			#g12Honor {
+				left: 88%;
+				top: 48%;
+				width: 16.859375vw;
+				height: 12.921875vw;
+			}
+			
+
+			#copy {
+				margin: 0;
+				position: absolute;
+				top: 25%;
+				left: 50%;
+				font-size: 2.5vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+				white-space: nowrap;
+
+			}
+
+			#email {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-size: 2.5vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+				white-space: nowrap;
+
+			}
+
+			#phone {
+				margin: 0;
+				position: absolute;
+				top: 75%;
+				left: 50%;
+				font-size: 2.5vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+				white-space: nowrap;
+
+			}
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		@media screen and (max-width: 850px){
+			html {
+			background-color: #121c21;
+			}
+
+
+			.navbar li a {
+				display: block;
+				color: #979b9d;
+				font-family: 'Press Start 2P';
+				font-size: 1.3vw;
+				text-align: center;
+				padding: 4.1vh 1vh;
+				text-decoration: none;
+
+			}
+
+			.navbar h1 {
+
+				font-size: 1.3vw;
+
+			}
+			.links {
+				height: 16vh;
+				width: 4vw;
+				top: 80%;
+			}
+
+			#githubLink {
+				width: 1.8625vw;
+				height: 1.8625vw;
+			}
+
+			#emailLink {
+				width: 1.8625vw;
+				height: 1.8625vw;
+			}
+
+			#replLink {
+				width: 1.8625vw;
+				height: 1.8625vw;
+			}
+
+			.about h1 {
+				font-size: 1.8vw;
+			}
+
+			.about p {
+				top: 9vh;
+				font-size: 1.1vw;
+			}
+
+			#aboutImage {
+				left: 30%;
+				top: 5vh;
+				width: 14.521875vw;
+				height: 18.3109375vw;
+			}
+
+			.projectsButton {
+				top: 40vh;
+				padding: 0.90125vw 1.371875vw;
+				font-size: 1.1vw;
+				outline: 0.349125vw solid #1d2e35;
+				outline-offset: -0.5953125vw;
+			}
+
+			.skills h1 {
+				top: 2.8vh;
+				font-size: 1.8vw;
+			}
+
+			.python {
+				height: 17.5vw;
+				width: 29.484375vw;
+				outline: 0.349125vw solid #121c21;
+				outline-offset: -0.5953125vw;
+			}
+
+			.HTML {
+				height: 17.5vw;
+				width: 29.484375vw;
+				outline: 0.349125vw solid #121c21;
+				outline-offset: -0.5953125vw;
+			}
+
+			.pc {
+				height: 17.5vw;
+				width: 29.484375vw;
+				outline: 0.349125vw solid #121c21;
+				outline-offset: -0.5953125vw;
+			}
+
+			.pspr {
+				height: 17.5vw;
+				width: 29.484375vw;
+				outline: 0.349125vw solid #121c21;
+				outline-offset: -0.5953125vw;
+			}
+
+			#pImage {
+				height: 2.953125vw;
+				width: 5.90625vw;
+			}
+
+			#tImage {
+				height: 2.953125vw;
+				width: 2.953125vw;
+			}
+
+			#hImage {
+				width: 8.268vw;
+				height: 2.709vw;
+			}
+
+			#prImage {
+				width: 5.625vw;
+				height: 2.475vw;
+			}
+
+			.python p {
+				font-size: 1vw;
+			}
+
+			.pc p {
+				font-size: 1vw;
+			}
+
+			.HTML p {
+				font-size: 1vw;
+			}
+
+			.pspr p {
+				font-size: 1vw;
+			}
+
+			.achievements h1 {
+				top: 1%;
+				font-size: 1.8vw;
+			}
+
+			.achievements h2 {
+				font-size: 1.5375vw;
+			}
+			.achievementsRect {
+				height: 45vh;
+				outline: 0.378125vw solid #1d2e35;
+				outline-offset: -0.5953125vw;
+			}
+
+			.achievementsRect2 {
+				height: 45vh;
+				outline: 0.378125vw solid #1d2e35;
+				outline-offset: -0.5953125vw;
+			}		
+
+			#g1 {
+				font-size: 1.05vw;
+			}
+
+			.container2 {
+				width: 80%;
+				left: 50%;
+				top: 14%;
+			}
+
+			#g2 {
+				font-size: 1.05vw;
+			}
+
+			#g9Honor {
+				width: 4.859375vw;
+				height: 3.921875vw;
+			}
+
+			#g10Honor {
+				width: 4.859375vw;
+				height: 3.921875vw;
+			}
+
+			#g11Honor {
+				width: 4.859375vw;
+				height: 3.921875vw;
+			}
+
+			#g12Honor {
+				width: 4.859375vw;
+				height: 3.921875vw;
+			}
+
+			#email {
+				font-size: 1.35vw;
+			}
+
+			#copy {
+				font-size: 1.35vw;
+			}
+
+			#phone {
+				font-size: 1.35vw;
+			}
+
+
+
+			@media screen and (max-width: 768px ) and (min-height: 909px )  and (max-height: 1024px ) {
+			html {
+			background-color: #121c21;
+			}
+
+			.navbar li a {
+				font-size: 1.9vw;
+				padding: 2.1vh 1vh;
+			}
+			.navbar h1 {
+				font-size: 1.9vw;
+			}
+			.cover h1 {
+				font-size: 5vw;
+			}
+			.cover h2 {
+				font-size: 2.5vw;
+			}
+			#scrollImage {
+				width: 8.90625vw;
+				height: 5.03125vw;
+			}
+			.links {
+				height: 16vh;
+				width: 8vw;
+				top: 80%;
+				outline: 0.349125vw solid #1d2e35;
+				outline-offset: -0.5953125vw;
+			}
+
+			#githubLink {
+				width: 3.8625vw;
+				height: 3.8625vw;
+			}
+
+			#emailLink {
+				width: 3.8625vw;
+				height: 3.8625vw;
+			}
+
+			#replLink {
+				width: 3.8625vw;
+				height: 3.8625vw;
+			}
+
+			.about h1 {
+				font-size: 4vw;
+			}
+
+			.about p {
+				top: 9vh;
+				font-size: 2vw;
+			}
+
+			#aboutImage {
+				left: 10%;
+				top: 8vh;
+				width: 36.521875vw;
+				height: 44.3109375vw;
+			}
+
+			.projectsButton {
+				top: 40vh;
+				padding: 2.90125vw 1.771875vw;
+				font-size: 2.5vw;
+				outline: 0.349125vw solid #1d2e35;
+				outline-offset: -0.5953125vw;
+			}
+
+			.skills h1 {
+				top: 2.8vh;
+				font-size: 4vw;
+			}
+
+			.python {
+				left: 55%;
+				height: 50.5vw;
+				width: 39.484375vw;
+				outline: 0.578125vw solid #121c21;
+				outline-offset: -1.1953125vw;
+			}
+
+			.HTML {
+				left: 45%;
+				height: 50.5vw;
+				width: 39.484375vw;
+				outline: 0.578125vw solid #121c21;
+				outline-offset: -1.1953125vw;
+			}
+
+			.pc {
+				left: 55%;
+				height: 50.5vw;
+				width: 39.484375vw;
+				outline: 0.578125vw solid #121c21;
+				outline-offset: -1.1953125vw;
+			}
+
+			.pspr {
+				left: 45%;
+				height: 50.5vw;
+				width: 39.484375vw;
+				outline: 0.578125vw solid #121c21;
+				outline-offset: -1.1953125vw;
+			}
+
+			#pImage {
+				height: 6.953125vw;
+				width: 13.90625vw;
+			}
+
+			#tImage {
+				height: 6.953125vw;
+				width: 6.953125vw;
+			}
+
+			#hImage {
+				width: 18.603vw;
+				height: 6.09525vw;
+			}
+
+			#prImage {
+				width: 12.65625vw;
+				height: 5.56875vw;
+			}
+
+			.python p {
+				font-size: 2vw;
+			}
+
+			.pc p {
+				font-size: 2vw;
+			}
+
+			.HTML p {
+				font-size: 2vw;
+			}
+
+			.pspr p {
+				font-size: 2vw;
+			}
+			.achievements {
+				height: 110vh;
+			}
+			.achievements h1 {
+				top: 3%;
+				font-size: 4vw;
+			}
+
+			.achievements h2 {
+				top: 5%;
+				font-size: 3.7375vw;
+			}
+			.achievementsRect {
+				top: 28%;
+				left: 50%;
+				height: 37vh;
+				width: 70vw;
+				outline: 1.078125vw solid #1d2e35;
+				outline-offset: -3.1953125vw;
+			}
+			.achievementsRect2 {
+				left: 50%;
+				top: 78%;
+				height: 37vh;
+				width: 70vw;
+				outline: 1.078125vw solid #1d2e35;
+				outline-offset: -3.1953125vw;
+
+			}
+
+
+			#g1 {
+				top: 16%;
+				font-size: 2.1vw;
+			}
+			.container {
+				top: 16%;
+			}
+			.container2 {
+				top: 16%;
+			}
+
+			#g2 {
+				top: 16%;
+				font-size: 2.1vw;	
+			}
+
+			#g9Honor {
+				left: 12%;
+				top: 48%;
+				width: 16.859375vw;
+				height: 12.921875vw;
+			}
+
+			#g10Honor {
+				left: 37%;
+				top: 48%;
+				width: 16.859375vw;
+				height: 12.921875vw;
+			}
+
+			#g11Honor {
+				left: 63%;
+				top: 48%;
+				width: 16.859375vw;
+				height: 12.921875vw;
+			}
+
+			#g12Honor {
+				left: 88%;
+				top: 48%;
+				width: 16.859375vw;
+				height: 12.921875vw;
+			}
+			
+
+			#copy {
+				margin: 0;
+				position: absolute;
+				top: 25%;
+				left: 50%;
+				font-size: 2.5vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+				white-space: nowrap;
+
+			}
+
+			#email {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-size: 2.5vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+				white-space: nowrap;
+
+			}
+
+			#phone {
+				margin: 0;
+				position: absolute;
+				top: 75%;
+				left: 50%;
+				font-size: 2.5vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+				white-space: nowrap;
+
+			}
+
+
+
+
+
+
+	}
+	@media screen and (width: 834px) and (height: 970px) {
+			html {
+			background-color: #121c21;
+			}
+
+			.navbar li a {
+				font-size: 1.9vw;
+				padding: 2.1vh 1vh;
+			}
+			.navbar h1 {
+				font-size: 1.9vw;
+			}
+			.cover h1 {
+				font-size: 5vw;
+			}
+			.cover h2 {
+				font-size: 2.5vw;
+			}
+			#scrollImage {
+				width: 8.90625vw;
+				height: 5.03125vw;
+			}
+			.links {
+				height: 16vh;
+				width: 8vw;
+				top: 80%;
+				outline: 0.349125vw solid #1d2e35;
+				outline-offset: -0.5953125vw;
+			}
+
+			#githubLink {
+				width: 3.8625vw;
+				height: 3.8625vw;
+			}
+
+			#emailLink {
+				width: 3.8625vw;
+				height: 3.8625vw;
+			}
+
+			#replLink {
+				width: 3.8625vw;
+				height: 3.8625vw;
+			}
+
+			.about h1 {
+				font-size: 4vw;
+			}
+
+			.about p {
+				top: 9vh;
+				font-size: 2vw;
+			}
+
+			#aboutImage {
+				left: 10%;
+				top: 8vh;
+				width: 36.521875vw;
+				height: 44.3109375vw;
+			}
+
+			.projectsButton {
+				top: 42vh;
+				padding: 2.90125vw 1.771875vw;
+				font-size: 2.5vw;
+				outline: 0.349125vw solid #1d2e35;
+				outline-offset: -0.5953125vw;
+			}
+			.skills {
+				height: 120vh;
+			}
+			.skills h1 {
+				top: 2.8vh;
+				font-size: 4vw;
+			}
+
+			.python {
+				left: 54%;
+				height: 50.5vw;
+				width: 39.484375vw;
+				outline: 0.578125vw solid #121c21;
+				outline-offset: -1.1953125vw;
+			}
+
+			.HTML {
+				left: 46%;
+				height: 50.5vw;
+				width: 39.484375vw;
+				outline: 0.578125vw solid #121c21;
+				outline-offset: -1.1953125vw;
+			}
+
+			.pc {
+				top: 55%;
+				left: 54%;
+				height: 50.5vw;
+				width: 39.484375vw;
+				outline: 0.578125vw solid #121c21;
+				outline-offset: -1.1953125vw;
+			}
+
+			.pspr {
+				top: 55%;
+				left: 46%;
+				height: 50.5vw;
+				width: 39.484375vw;
+				outline: 0.578125vw solid #121c21;
+				outline-offset: -1.1953125vw;
+			}
+
+			#pImage {
+				height: 6.953125vw;
+				width: 13.90625vw;
+			}
+
+			#tImage {
+				height: 6.953125vw;
+				width: 6.953125vw;
+			}
+
+			#hImage {
+				width: 18.603vw;
+				height: 6.09525vw;
+			}
+
+			#prImage {
+				width: 12.65625vw;
+				height: 5.56875vw;
+			}
+
+			.python p {
+				font-size: 1.96vw;
+			}
+
+			.pc p {
+				font-size: 1.96vw;
+			}
+
+			.HTML p {
+				font-size: 1.96vw;
+			}
+
+			.pspr p {
+				font-size: 1.96vw;
+			}
+			.achievements {
+				height: 128vh;
+			}
+			.achievements h1 {
+				top: 3%;
+				font-size: 4vw;
+			}
+
+			.achievements h2 {
+				top: 5%;
+				font-size: 3.7375vw;
+			}
+			.achievementsRect {
+				top: 28%;
+				left: 50%;
+				height: 43vh;
+				width: 70vw;
+				outline: 1.078125vw solid #1d2e35;
+				outline-offset: -3.1953125vw;
+			}
+			.achievementsRect2 {
+				left: 50%;
+				top: 78%;
+				height: 43vh;
+				width: 70vw;
+				outline: 1.078125vw solid #1d2e35;
+				outline-offset: -3.1953125vw;
+
+			}
+
+
+			#g1 {
+				top: 16%;
+				font-size: 2.1vw;
+			}
+			.container {
+				top: 16%;
+			}
+			.container2 {
+				top: 16%;
+			}
+
+			#g2 {
+				top: 16%;
+				font-size: 2.1vw;	
+			}
+
+			#g9Honor {
+				left: 12%;
+				top: 48%;
+				width: 16.859375vw;
+				height: 12.921875vw;
+			}
+
+			#g10Honor {
+				left: 37%;
+				top: 48%;
+				width: 16.859375vw;
+				height: 12.921875vw;
+			}
+
+			#g11Honor {
+				left: 63%;
+				top: 48%;
+				width: 16.859375vw;
+				height: 12.921875vw;
+			}
+
+			#g12Honor {
+				left: 88%;
+				top: 48%;
+				width: 16.859375vw;
+				height: 12.921875vw;
+			}
+			
+
+			#copy {
+				margin: 0;
+				position: absolute;
+				top: 25%;
+				left: 50%;
+				font-size: 2.5vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+				white-space: nowrap;
+
+			}
+
+			#email {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-size: 2.5vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+				white-space: nowrap;
+
+			}
+
+			#phone {
+				margin: 0;
+				position: absolute;
+				top: 75%;
+				left: 50%;
+				font-size: 2.5vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+				white-space: nowrap;
+
+			}
+
+
+
+
+
+
+	}
+
+		}
+		@media screen and (max-width: 500px) {
+			html {
+			background-color: #121c21;
+			}
+			.navbar li a {
+				font-size: 2.1vw;
+				padding: 2.6vh 1vh;
+			}
+
+			.navbar h1 {
+				font-size: 2.7vw;
+			}
+			.cover h1 {
+				font-size: 6vw;
+			}
+			.cover h2 {
+				font-size: 2.7vw;
+				white-space: nowrap;
+			}
+			.links {
+				height: 15vh;
+				width: 10vw;
+				top: 80%;
+				border: 0.114375vw solid #121c21;
+				outline: 0.758125vw solid #1d2e35;
+				outline-offset: -1.153125vw;
+			}
+			#scrollImage {
+				width: 12.765625vw;
+				height: 5.078125vw;
+			}
+			#githubLink {
+				width: 6.5625vw;
+				height: 6.5625vw;
+			}
+
+			#emailLink {
+				width: 6.5625vw;
+				height: 6.5625vw;
+			}
+
+			#replLink {
+				width: 6.5625vw;
+				height: 6.5625vw;
+			}
+			.about {
+				position: relative;
+				background-color: #1d2e35;
+				width: 100%;
+				height: 50vh;
+			}
+
+
+
+			.achievements {
+				width: 100%;
+				height: 125vh;
+			}
+
+			.footer1 {
+				position: relative;
+				background-color: #fdd54f;
+				width: 100%;
+				height: 13vh;
+			}
+			.about h1 {
+				left: 50%;
+				font-size: 4.5vw;
+				transform: translate(-50%);
+			}
+
+			.about p {
+				top: 9vh;
+				font-size: 2.5vw;
+			}
+
+			#aboutImage {
+				left: 1%;
+				top: 10vh;
+				width: 46.521875vw;
+				height: 54.3109375vw;
+			}
+
+			.projectsButton {
+				left: 50%;
+				top: 40vh;
+				border: 0.514375vw solid #121c21;
+				outline: 0.758125vw solid #1d2e35;
+				outline-offset: -1.353125vw;
+				padding: 6.50125vw 10.371875vw;
+				font-size: 3vw;
+				transform: translate(-50%);
+			}
+
+			.skills h1 {
+				top: 2vh;
+				font-size: 4.5vw;
+
+			}
+
+			.python {
+				height: 38vw;
+				width: 58vw;
+				top: 10%;
+				left: 50%;
+				transform: translate(-50%);
+				outline: 0.53125vw solid #121c21;
+				outline-offset: -1.053125vw;
+			}
+
+			.HTML {
+				height: 38vw;
+				width: 58vw;
+				top: 33%;
+				left: 50%;
+				transform: translate(-50%);
+				outline: 0.53125vw solid #121c21;
+				outline-offset: -1.053125vw;
+			}
+
+			.pc {
+				height: 38vw;
+				width: 58vw;
+				top: 56%;
+				left: 50%;
+				transform: translate(-50%);
+				outline: 0.53125vw solid #121c21;
+				outline-offset: -1.053125vw;
+			}
+
+			.pspr {
+				height: 38vw;
+				width: 58vw;
+				top: 79%;
+				left: 50%;
+				transform: translate(-50%);
+				outline: 0.53125vw solid #121c21;
+				outline-offset: -1.053125vw;
+			}
+
+			#pImage {
+				top: 7%;
+				height: 5.953125vw;
+				width: 11.90625vw;
+			}
+
+			#tImage {
+				top: 7%;
+
+				height: 5.953125vw;
+				width: 5.953125vw;
+			}
+
+			#hImage {
+				top: 7%;
+				width: 16.268vw;
+				height: 4.709vw;
+			}
+
+			#prImage {
+				top: 7%;
+				width: 10.625vw;
+				height: 4.475vw;
+			}
+
+			.python p {
+				font-size: 2vw;
+
+			}
+
+			.pc p {
+				font-size: 2vw;
+
+			}
+
+			.HTML p {
+				font-size: 2vw;
+
+			}
+
+			.pspr p {
+				font-size: 2vw;
+
+			}
+
+			.achievements h1 {
+				top: 3%;
+				font-size: 4.5vw;
+			}
+
+			.achievements h2 {
+				font-size: 6.5375vw;
+			}
+			.achievementsRect {
+				top: 28%;
+				left: 50%;
+				height: 42vh;
+				width: 75vw;
+				outline: 1.078125vw solid #1d2e35;
+				outline-offset: -3.1953125vw;
+			}
+			.achievementsRect2 {
+				left: 50%;
+				top: 75%;
+				height: 42vh;
+				width: 75vw;
+				outline: 1.078125vw solid #1d2e35;
+				outline-offset: -3.1953125vw;
+
+			}
+
+
+			#g1 {
+				font-size: 3.6vw;
+				top: 16%;
+			}
+
+			.container {
+				top: 16%;
+			}
+			.container2 {
+				width: 80%;
+				left: 50%;
+				top: 16%;
+			}
+
+			#g2 {
+				font-size: 3.6vw;
+				top: 16%;
+			}
+
+			#g9Honor {
+				left: 12%;
+				top: 48%;
+				width: 20.859375vw;
+				height: 14.921875vw;
+			}
+
+			#g10Honor {
+				left: 37%;
+				top: 48%;
+				width: 20.859375vw;
+				height: 14.921875vw;
+			}
+
+			#g11Honor {
+				left: 63%;
+				top: 48%;
+				width: 20.859375vw;
+				height: 14.921875vw;
+			}
+
+			#g12Honor {
+				left: 88%;
+				top: 48%;
+				width: 20.859375vw;
+				height: 14.921875vw;
+			}
+			
+
+			#copy {
+				margin: 0;
+				position: absolute;
+				top: 25%;
+				left: 50%;
+				font-size: 3vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+				white-space: nowrap;
+
+			}
+
+			#email {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-size: 3vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+				white-space: nowrap;
+
+			}
+
+			#phone {
+				margin: 0;
+				position: absolute;
+				top: 75%;
+				left: 50%;
+				font-size: 3vw;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+				white-space: nowrap;
+
+			}
+
+		}
+
+
+
+
+		/* CHANGE RES FOR THIS AND ONE BELOW AS IT STANDS THIS ONE DOESNT WORK AND THE ONE BELOW SHOULD REPLACE IT. TRY JUST USING THE OTHER ONES CODE OR REDO IT IF THAT DOESNT WORK.
+		*/
+		
+		@media screen and (max-width: 450px ) and ( max-height: 736px ) {
+			html {
+			background-color: #121c21;
+			}
+
+			.links {
+				height: 15vh;
+				width: 10vw;
+				top: 80%;
+				outline: 0.5vw solid #1d2e35;
+				outline-offset: -0.7vw;
+			}
+			#scrollImage {
+				width: 12.765625vw;
+				height: 5.078125vw;
+			}
+			#githubLink {
+				width: 5.5625vw;
+				height: 5.5625vw;
+			}
+
+			#emailLink {
+				width: 5.5625vw;
+				height: 5.5625vw;
+			}
+
+			#replLink {
+				width: 5.5625vw;
+				height: 5.5625vw;
+			}
+			.about {
+				position: relative;
+				background-color: #1d2e35;
+				width: 100%;
+				height: 53vh;
+			}
+
+			.skills {
+				height: 110vh;
+			}
+
+			.achievements {
+				width: 100%;
+				height: 125vh;
+			}
+
+			.footer1 {
+				position: relative;
+				background-color: #fdd54f;
+				width: 100%;
+				height: 13vh;
+			}
+			.about h1 {
+				left: 50%;
+				font-size: 4.5vw;
+				transform: translate(-50%);
+			}
+
+			.about p {
+				top: 9vh;
+				font-size: 2.5vw;
+			}
+
+			#aboutImage {
+				left: 1%;
+				top: 10vh;
+				width: 46.521875vw;
+				height: 54.3109375vw;
+			}
+
+			.projectsButton {
+				left: 50%;
+				top: 44vh;
+				border: 0.314375vw solid #121c21;
+				outline: 0.758125vw solid #1d2e35;
+				outline-offset: -1.353125vw;
+				padding: 4.50125vw 6.371875vw;
+				font-size: 2.5vw;
+				transform: translate(-50%);
+			}
+			.achievementsRect {
+				height: 46vh;
+			}
+			.achievementsRect2 {
+				height: 46vh;
+			}
+
+
+
+		}
+		@media screen and (max-width: 412px) and (min-height: 400px) and (max-height: 650px) {
+			html {
+			background-color: #121c21;
+			}
+
+			.links {
+				height: 15vh;
+				width: 10vw;
+				top: 80%;
+				outline: 0.5vw solid #1d2e35;
+				outline-offset: -0.7vw;
+			}
+			#scrollImage {
+				width: 12.765625vw;
+				height: 5.078125vw;
+			}
+			#githubLink {
+				width: 5.5625vw;
+				height: 5.5625vw;
+			}
+
+			#emailLink {
+				width: 5.5625vw;
+				height: 5.5625vw;
+			}
+
+			#replLink {
+				width: 5.5625vw;
+				height: 5.5625vw;
+			}
+			.about {
+				position: relative;
+				background-color: #1d2e35;
+				width: 100%;
+				height: 60vh;
+			}
+
+			.skills {
+				height: 145vh;
+			}
+
+			.achievements {
+				width: 100%;
+				height: 145vh;
+			}
+			#g1 {
+				top: 20%;
+				font-size: 3.5vw;
+				}
+			#g2 {
+				top: 20%;
+				font-size: 3.5vw;
+				}
+			.achievements h2 {
+				font-size: 8vw;
+			}
+			.achievementsRect  {
+				height: 48vh;
+			}
+			.achievementsRect2  {
+				height: 48vh;
+			}
+			.container {
+				top: 20%;
+			}
+			.container2 {
+			top: 20%;
+			}
+			.footer1 {
+				position: relative;
+				background-color: #fdd54f;
+				width: 100%;
+				height: 13vh;
+			}
+			.about h1 {
+				left: 50%;
+				font-size: 4.5vw;
+				transform: translate(-50%);
+			}
+
+			.about p {
+				top: 9vh;
+				font-size: 2.79vw;
+			}
+
+			#aboutImage {
+				left: 1%;
+				top: 10vh;
+				width: 46.521875vw;
+				height: 54.3109375vw;
+			}
+
+			.projectsButton {
+				left: 50%;
+				top: 45vh;
+				border: 0.314375vw solid #121c21;
+				outline: 0.758125vw solid #1d2e35;
+				outline-offset: -1.353125vw;
+				padding: 5.70125vw 6.971875vw;
+				font-size: 5.3vw;
+				transform: translate(-50%);
+			}
+			.python {
+				height: 55vw;
+				width: 70vw;
+				top: 8%;
+				left: 50%;
+				transform: translate(-50%);
+				outline: 0.73125vw solid #121c21;
+				outline-offset: -1.053125vw;
+			}
+
+			.HTML {
+				height: 55vw;
+				width: 70vw;
+				top: 31%;
+				left: 50%;
+				transform: translate(-50%);
+				outline: 0.73125vw solid #121c21;
+				outline-offset: -1.053125vw;
+			}
+
+			.pc {
+				height: 55vw;
+				width: 70vw;
+				top: 54%;
+				left: 50%;
+				transform: translate(-50%);
+				outline: 0.73125vw solid #121c21;
+				outline-offset: -1.053125vw;
+			}
+
+			.pspr {
+				height: 55vw;
+				width: 70vw;
+				top: 77%;
+				left: 50%;
+				transform: translate(-50%);
+				outline: 0.73125vw solid #121c21;
+				outline-offset: -1.053125vw;
+			}
+
+			#pImage {
+				top: 7%;
+				height: 7.953125vw;
+				width: 15.90625vw;
+			}
+
+			#tImage {
+				top: 7%;
+				height: 7.953125vw;
+				width: 7.953125vw;
+			}
+
+			#hImage {
+				top: 7%;
+				width: 22.268vw;
+				height: 7.709vw;
+			}
+
+			#prImage {
+				top: 7%;
+				width: 14.625vw;
+				height: 6.475vw;
+			}
+
+			.python p {
+				font-size: 2.75vw;
+
+			}
+
+			.pc p {
+				font-size: 2.75vw;
+
+			}
+
+			.HTML p {
+				font-size: 2.75vw;
+
+			}
+
+			.pspr p {
+				font-size: 2.75vw;
+
+			}
+		}
+
+
+
+
+		@media screen and (max-width: 375px) and (max-height: 632px) {
+			html {
+			background-color: #121c21;
+			}
+
+			.links {
+				height: 15vh;
+				width: 10vw;
+				top: 80%;
+				outline: 0.5vw solid #1d2e35;
+				outline-offset: -0.7vw;
+			}
+			#scrollImage {
+				width: 12.765625vw;
+				height: 5.078125vw;
+			}
+			#githubLink {
+				width: 5.5625vw;
+				height: 5.5625vw;
+			}
+
+			#emailLink {
+				width: 5.5625vw;
+				height: 5.5625vw;
+			}
+
+			#replLink {
+				width: 5.5625vw;
+				height: 5.5625vw;
+			}
+			.about {
+				position: relative;
+				background-color: #1d2e35;
+				width: 100%;
+				height: 60vh;
+			}
+
+			.skills {
+				height: 145vh;
+			}
+
+			.achievements {
+				width: 100%;
+				height: 145vh;
+			}
+			#g1 {
+				top: 20%;
+				font-size: 3.5vw;
+				}
+			#g2 {
+				top: 20%;
+				font-size: 3.5vw;
+				}
+			.achievements h2 {
+				font-size: 8vw;
+			}
+			.achievementsRect  {
+				height: 48vh;
+			}
+			.achievementsRect2  {
+				height: 48vh;
+			}
+			.container {
+				top: 20%;
+			}
+			.container2 {
+			top: 20%;
+			}
+			.footer1 {
+				position: relative;
+				background-color: #fdd54f;
+				width: 100%;
+				height: 13vh;
+			}
+			.about h1 {
+				left: 50%;
+				font-size: 4.5vw;
+				transform: translate(-50%);
+			}
+
+			.about p {
+				top: 9vh;
+				font-size: 2.79vw;
+			}
+
+			#aboutImage {
+				left: 1%;
+				top: 10vh;
+				width: 46.521875vw;
+				height: 54.3109375vw;
+			}
+
+			.projectsButton {
+				left: 50%;
+				top: 49vh;
+				border: 0.314375vw solid #121c21;
+				outline: 0.758125vw solid #1d2e35;
+				outline-offset: -1.353125vw;
+				padding: 5.50125vw 6.771875vw;
+				font-size: 3.3vw;
+				transform: translate(-50%);
+			}
+			.python {
+				height: 55vw;
+				width: 70vw;
+				top: 8%;
+				left: 50%;
+				transform: translate(-50%);
+				outline: 0.73125vw solid #121c21;
+				outline-offset: -1.053125vw;
+			}
+
+			.HTML {
+				height: 55vw;
+				width: 70vw;
+				top: 31%;
+				left: 50%;
+				transform: translate(-50%);
+				outline: 0.73125vw solid #121c21;
+				outline-offset: -1.053125vw;
+			}
+
+			.pc {
+				height: 55vw;
+				width: 70vw;
+				top: 54%;
+				left: 50%;
+				transform: translate(-50%);
+				outline: 0.73125vw solid #121c21;
+				outline-offset: -1.053125vw;
+			}
+
+			.pspr {
+				height: 55vw;
+				width: 70vw;
+				top: 77%;
+				left: 50%;
+				transform: translate(-50%);
+				outline: 0.73125vw solid #121c21;
+				outline-offset: -1.053125vw;
+			}
+
+			#pImage {
+				top: 7%;
+				height: 7.953125vw;
+				width: 15.90625vw;
+			}
+
+			#tImage {
+				top: 7%;
+				height: 7.953125vw;
+				width: 7.953125vw;
+			}
+
+			#hImage {
+				top: 7%;
+				width: 22.268vw;
+				height: 7.709vw;
+			}
+
+			#prImage {
+				top: 7%;
+				width: 14.625vw;
+				height: 6.475vw;
+			}
+
+			.python p {
+				font-size: 2.75vw;
+
+			}
+
+			.pc p {
+				font-size: 2.75vw;
+
+			}
+
+			.HTML p {
+				font-size: 2.75vw;
+
+			}
+
+			.pspr p {
+				font-size: 2.75vw;
+
+			}
+		}
+
+
+</style>
+</head>
+
+<body>
+	<div class="navbar">
+		<ul>
+			<h1> JC </h1>
+			<li><a href="extrasW.html">Extra-Curriculars</a></li>
+			<li><a href="projectsW.html">Projects |</a></li>
+			<li><a class="active" href="indexW.html">Home |</a></li>
+
+		</ul>
+	</div>
+
+	<div class="cover">
+		<h1> <span class="nowrap">Jacob Cardoso</span></h1>
+		<h2> Student & Developer</h2>
+		<a href="#aboutPage" id="aboutScroll"><img src="images/waterloo/scroll.png" id="scrollImage"></a>
+	</div>
+
+	<div class="links">
+		<a href="https://github.com/Jacob-Cardoso"><img src="images/github.png" id="githubLink"></a>
+		<a href="mailto:jacobcardoso2003@gmail.com"><img src="images/email.png" id="emailLink"> </a>
+		<a href="https://repl.it/@JacobCardoso"><img src="images/repl.png" id="replLink"></a>
+	</div>
+	
+	<div class="about" id="aboutPage">
+
+		<img src="images/about.png" id="aboutImage">
+		<h1> /About </h1>
+		<p> <em> Hello! </em> My name is Jacob Cardoso, and I'm a grade 12 student at <br> Dr. Frank J. Hayden Secondary School in <em> Burlington, Ontario.</em> <br> I'm applying to university to study <em> computer science</em> so I can <br> grow as a programmer, leader and student. <br> <br> <br> 
+			In university I'm hoping to gain valuable work experience and knowledge <br> that will help me achieve 
+			my current <em> long term goal </em> <br> of starting and growing a company that develops children's education software. <br>
+			</p>
+		<button class="projectsButton" onclick= "window.location = '/projectsW.html';">Projects</button>
+
+
+
+	</div>
+	<div class="skills">
+		<h1> /Skills </h1>
+		<div class="python">
+			<img src="images/waterloo/pythonjava.png" id="pImage">
+			<p> <em> Python and Java </em> <br> 
+				Python and Java are currently my two strongest programming languages. I've been using Python for about two years and Java for half a year. I'm knowledgeable in Python modules as well, such as Pygame, PyQt5 and more. In Java, I've developed small command-line programs related to games and finance, but I plan to use it more in the upcoming months to create desktop applications.
+			</p>
+		</div>
+		<div class="pc">
+			<img src="images/waterloo/tools.png" id="tImage">
+			<p> <em> PC Building </em> <br> Building computers is one of my passions. I built my first PC in 2016, followed by my second in 2017 for my parents and my third in 2020 for my brother. Besides solely building currently operational systems, I have disassembled and worked on a countless number of computers in different of the computing-related courses I have taken since tenth grade. Before building PC's, I repaired my elementary school's devices occasionally.</p>
+		</div>
+		<div class="HTML">
+			<img src="images/waterloo/htmlcss.png" id="hImage">
+			<p> <em>  HTML CSS Javascript </em> <br> This website was made using my knowledge of HTML, CSS and Javascript. Although I'm not as skilled with them compared to Python, Java and Arduino, I have experience making web based games such as a space invaders recreation. Along with this, I've used several IoT protocols and API's along with RESTful to create functional programs that work with Arduino's and Raspberry Pi's anywhere in the world. </p>
+		</div>
+		<div class="pspr">
+			<img src="images/waterloo/ps.png" id="prImage">
+			<p> <em> Photohop and Premiere </em> <br> I've been using Adobe Photoshop and Premiere for about 7 and 5 years, respectively. I started by doing celebrity face swaps and slowly improved by doing graphic design for my friends and family. After using Photoshop for some time, I started learning how to edit school projects and video game clips in Premiere. With plenty of time and practice, I've made Photoshop and Premiere some of my greatest assets.
+			</p>
+			</div>
+
+	</div>
+	<div class="achievements">
+		<h1> /Achievements </h1>
+
+		<div class="achievementsRect">
+			<h2> Grade 11 </h2>
+			<p id="g1">
+				Computer Science
+				<span style="float:right; position: relative; left:-20%">
+					100%
+				</span>
+			</p>
+
+			<div class="container">
+				<div class="grades1 cs"></div>
+			</div>
+
+			<p id="g1">
+				Computer Engineering
+				<span style="float:right; position: relative; left:-20%">
+					100%
+				</span>
+			</p>
+
+			<div class="container">
+				<div class="grades1 ce"></div>
+			</div>
+
+			<p id="g1">
+				Business
+				<span style="float:right; position: relative; left:-20%">
+					98%
+				</span>
+			</p>
+
+			<div class="container">
+				<div class="grades1 ba"></div>
+			</div>
+
+			<p id="g1">
+				Law
+				<span style="float:right; position: relative; left:-20%">
+					98%
+				</span>
+			</p>
+			<div class="container">
+				<div class="grades1 law"></div>
+			</div>
+
+
+
+		</div>
+		<div class="achievementsRect2">
+			<h2> Grade 12 </h2>
+			<p id="g2">
+				99%
+				<span style="float:right; position: relative; left:-20%">
+					Computer Science (Midterm Mark)
+				</span>
+			</p>
+
+			<div class="container2">
+				<div class="grades2 cs2"></div>
+			</div>
+
+			<p id="g2">
+				100%
+				<span style="float:right; position: relative; left:-20%">
+					Computer Engineering
+
+				</span>
+			</p>
+
+			<div class="container2">
+				<div class="grades2 ce2"></div>
+			</div>
+
+			<p id="g2">
+				98%
+				<span style="float:right; position: relative; left:-20%">
+					Data Management
+				</span>
+			</p>
+
+			<div class="container2">
+				<div class="grades2 ba2"></div>
+			</div>
+
+
+		</div>
+		<img src="images/waterloo/g9Honor.png" id="g9Honor">
+		<img src="images/waterloo/g10Honor.png" id="g10Honor">
+		<img src="images/waterloo/g11Honor.png" id="g11Honor">
+
+	</div>
+
+	<div class="footer1">
+		<h4 id="copy">
+			&#169; 2020 Jacob Cardoso All Rights Reserved
+		</h4>
+		<h4 id="email">
+			Email: jacobcardoso2003@gmail.com
+		</h4>
+		<h4 id="phone">
+			Phone: 905-320-7895
+		</h4>
+	</div>
+</body>
+
+</html>

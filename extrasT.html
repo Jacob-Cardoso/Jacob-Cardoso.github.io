@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+<head>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+
+	<link rel="icon" href="images/toronto/favicon.png">
+
+	<title>
+		Jacob Cardoso - Portfolio
+	</title>
+	<style>
+	@media screen and (min-width: 320px ){
+
+		body::-webkit-scrollbar {
+				width: 0.4vw;
+				background: #121c21;
+			}
+
+			body::-webkit-scrollbar-thumb {
+				background: #1f82bd;
+				height: 1.171875vw;
+			}
+
+			body::-webkit-scrollbar-track-piece {
+				display: none;
+			}
+
+	 html {
+			background-color: #1d2e35;
+		    max-width: 100%;
+			overflow-x: hidden;
+			}
+			.nowrap {
+				white-space: nowrap;
+			}
+			html {
+				scroll-behavior: smooth;
+			}
+
+			body {
+				height: 100%;
+				margin: 0;
+				max-width: 100%;
+  			  	overflow-x: hidden;
+			}
+
+			.navbar ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #121c21;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: 9998;
+
+			}
+
+			.navbar li {
+				float: right;
+			}
+
+			.navbar li a {
+				display: block;
+				color: #979b9d;
+				font-family: 'Press Start 2P';
+				font-size: 8px;
+				text-align: center;
+				padding: 16px 4px;
+				text-decoration: none;
+
+			}
+
+			.navbar h1 {
+				float: left;
+				padding-left: 1vh;
+				margin-top: 16px;
+				display: block;
+				color: #1f82bd;
+				font-family: 'Press Start 2P';
+				font-size: 10px;
+				text-align: left;
+				text-decoration: none;
+			}
+
+			.navbar li a:hover:not(.active) {
+				color: #ffffff;
+			}
+
+			.navbar .active {
+				color: #1f82bd;
+			}
+
+			.cover {
+				width: 100%;
+				height: 100vh;
+				background: linear-gradient(to bottom left, #121c21 50%, #1f82bd 50%)
+			}
+
+			.cover h1 {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-family: 'Press Start 2P';
+				font-size: 100%;
+				color: #ffffff;
+				font-weight: 100;
+				text-align: center;
+				line-height: 150%;
+				transform: translate(-50%, -50%);
+			}
+
+
+
+			.links {
+				position: fixed;
+				left: 0.5%;
+				top: 70vh;
+				height: auto;
+				width: 10%;
+				background-color: #121c21;
+				outline: 1.9px solid #1d2e35;
+				outline-offset: -3px;
+				z-index: 9999;
+			}
+
+
+
+
+			.footer1 {
+				position: relative;
+				background-color: #1f82bd;
+				width: 100%;
+				height: auto;
+				padding-top: 2%;
+				padding-bottom: 2%;
+
+			}
+
+			#copy {
+				position: relative;
+				font-size: 11.4px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				left: 50%;
+				text-align: center;
+				transform: translate(-50%);
+
+			}
+
+			#email {
+				position: relative;
+				font-size: 11.4px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				left: 50%;
+				text-align: center;
+				transform: translate(-50%);
+
+			}
+
+			#phone {
+				margin: 0;
+				position: relative;
+				font-size: 11.4px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				left: 50%;
+				text-align: center;
+				transform: translate(-50%);
+				margin-bottom: 3%;
+	
+			}
+
+
+
+
+			#githubLink {
+				position: relative;
+				left: 50%;
+				width: 22px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 25%;
+				user-drag: none; 
+				user-select: none;
+				-moz-user-select: none;
+				-webkit-user-drag: none;
+				-webkit-user-select: none;
+				-ms-user-select: none;
+				margin-right: 25%;
+
+			}
+
+			#githubLink:hover {
+				opacity: 0.3;
+			}
+
+			#emailLink {
+				position: relative;
+				left: 50%;
+				width: 22px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 15%;
+				user-drag: none; 
+				user-select: none;
+				-moz-user-select: none;
+				-webkit-user-drag: none;
+				-webkit-user-select: none;
+				-ms-user-select: none;
+				margin-right: 25%;
+
+			}
+
+			#emailLink:hover {
+				opacity: 0.3;
+			}
+
+			#replLink {
+				position: relative;
+				left: 50%;
+				width: 22px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 15%;
+				margin-bottom: 25%;
+				user-drag: none; 
+				user-select: none;
+				-moz-user-select: none;
+				-webkit-user-drag: none;
+				-webkit-user-select: none;
+				-ms-user-select: none;
+				margin-right: 25%;
+
+			}
+
+			#replLink:hover {
+				opacity: 0.3;
+			}      
+            
+            .projectGrid {
+				position: relative;
+				background-color: #1d2e35;
+				width: 100%;
+				padding-bottom: 5%;
+            }
+			#eSlide {
+				width: 100%;
+				height: 500px;
+				position: relative;
+				margin-top: 5%;
+				left: 50%;
+				transform: translate(-50%);
+			}
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+	@media screen and (min-width: 480px ){
+
+
+			.navbar ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #121c21;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: 9998;
+
+			}
+
+			.navbar li {
+				float: right;
+			}
+
+			.navbar li a {
+				display: block;
+				color: #979b9d;
+				font-family: 'Press Start 2P';
+				font-size: 10px;
+				text-align: center;
+				padding: 16px 4px;
+				text-decoration: none;
+
+			}
+
+			.navbar h1 {
+				float: left;
+				padding-left: 1vh;
+				margin-top: 16px;
+				display: block;
+				color: #1f82bd;
+				font-family: 'Press Start 2P';
+				font-size: 12px;
+				text-align: left;
+				text-decoration: none;
+			}
+
+			.navbar li a:hover:not(.active) {
+				color: #ffffff;
+			}
+
+			.navbar .active {
+				color: #1f82bd;
+			}
+
+			.cover {
+				width: 100%;
+				height: 100vh;
+				background: linear-gradient(to bottom left, #121c21 50%, #1f82bd 50%)
+			}
+
+			.cover h1 {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-family: 'Press Start 2P';
+				font-size: 140%;
+				color: #ffffff;
+				font-weight: 100;
+				text-align: center;
+				line-height: 150%;
+				transform: translate(-50%, -50%);
+			}
+
+			.links {
+				position: fixed;
+				left: 0.5%;
+				top: 75vh;
+				height: auto;
+				width: 7.2%;
+				background-color: #121c21;
+				outline: 2.4px solid #1d2e35;
+				outline-offset: -4px;
+				z-index: 9999;
+
+			}
+
+
+
+
+			.footer1 {
+				position: relative;
+				background-color: #1f82bd;
+				width: 100%;
+				height: auto;
+				padding-top: 2%;
+				padding-bottom: 2%;
+
+			}
+
+			#copy {
+				position: relative;
+				font-size: 14px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				left: 50%;
+				text-align: center;
+				transform: translate(-50%);
+
+			}
+
+			#email {
+				position: relative;
+				font-size: 14px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				left: 50%;
+				text-align: center;
+				transform: translate(-50%);
+
+			}
+
+			#phone {
+				margin: 0;
+				position: relative;
+				font-size: 14px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				left: 50%;
+				text-align: center;
+				transform: translate(-50%);
+				margin-bottom: 3%;
+			}
+
+
+			#githubLink {
+				position: relative;
+				left: 50%;
+				width: 28px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 25%;
+
+			}
+
+			#githubLink:hover {
+				opacity: 0.3;
+			}
+
+			#emailLink {
+				position: relative;
+				left: 50%;
+				width: 28px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 15%;
+			}
+
+			#emailLink:hover {
+				opacity: 0.3;
+			}
+
+			#replLink {
+				position: relative;
+				left: 50%;
+				width: 28px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 15%;
+				margin-bottom: 25%;
+
+			}
+
+			#replLink:hover {
+				opacity: 0.3;
+			}     
+            
+            .projectGrid {
+				position: relative;
+				background-color: #1d2e35;
+				width: 100%;
+				padding-bottom: 5%;
+            }
+			#eSlide {
+				width: 100%;
+				height: 500px;
+				position: relative;
+				margin-top: 5%;
+				left: 50%;
+				transform: translate(-50%);
+			}
+				
+	}
+
+
+
+
+
+
+
+
+
+	@media screen and (min-width: 768px ){
+
+
+			.navbar ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #121c21;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: 9998;
+
+			}
+
+			.navbar li {
+				float: right;
+			}
+
+			.navbar li a {
+				display: block;
+				color: #979b9d;
+				font-family: 'Press Start 2P';
+				font-size: 13px;
+				text-align: center;
+				padding: 16px 4px;
+				text-decoration: none;
+
+			}
+
+			.navbar h1 {
+				float: left;
+				padding-left: 1vh;
+				margin-top: 16px;
+				display: block;
+				color: #1f82bd;
+				font-family: 'Press Start 2P';
+				font-size: 15px;
+				text-align: left;
+				text-decoration: none;
+			}
+
+			.navbar li a:hover:not(.active) {
+				color: #ffffff;
+			}
+
+			.navbar .active {
+				color: #1f82bd;
+			}
+
+			.cover {
+				width: 100%;
+				height: 100vh;
+				background: linear-gradient(to bottom left, #121c21 50%, #1f82bd 50%)
+			}
+
+			.cover h1 {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-family: 'Press Start 2P';
+				font-size: 180%;
+				color: #ffffff;
+				font-weight: 100;
+				text-align: center;
+				line-height: 150%;
+				transform: translate(-50%, -50%);
+			}
+
+			.links {
+				position: fixed;
+				left: 0.5%;
+				top: 75vh;
+				height: auto;
+				width: 7.2%;
+				background-color: #121c21;
+				outline: 2.4px solid #1d2e35;
+				outline-offset: -4px;
+				z-index: 9999;
+
+			}
+
+			.links {
+				position: fixed;
+				left: 0.5%;
+				top: 75vh;
+				height: auto;
+				width: 5.2%;
+				background-color: #121c21;
+				outline: 2.4px solid #1d2e35;
+				outline-offset: -4px;
+				z-index: 9999;
+
+			}
+
+
+
+
+			.footer1 {
+				position: relative;
+				background-color: #1f82bd;
+				width: 100%;
+				height: auto;
+				padding-top: 1%;
+				padding-bottom: 1%;
+
+			}
+
+			#copy {
+				position: relative;
+				font-size: 16px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				left: 50%;
+				text-align: center;
+				transform: translate(-50%);
+
+			}
+
+			#email {
+				position: relative;
+				font-size: 16px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				left: 50%;
+				text-align: center;
+				transform: translate(-50%);
+
+			}
+
+			#phone {
+				margin: 0;
+				position: relative;
+				font-size: 16px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				left: 50%;
+				text-align: center;
+				transform: translate(-50%);
+				margin-bottom: 1%;
+			}
+
+
+			#githubLink {
+				position: relative;
+				left: 50%;
+				width: 28px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 25%;
+
+			}
+
+			#githubLink:hover {
+				opacity: 0.3;
+			}
+
+			#emailLink {
+				position: relative;
+				left: 50%;
+				width: 28px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 15%;
+			}
+
+			#emailLink:hover {
+				opacity: 0.3;
+			}
+
+			#replLink {
+				position: relative;
+				left: 50%;
+				width: 28px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 15%;
+				margin-bottom: 25%;
+
+			}
+
+			#replLink:hover {
+				opacity: 0.3;
+			}
+            
+            
+            .projectGrid {
+				position: relative;
+				background-color: #1d2e35;
+				width: 100%;
+				padding-bottom: 5%;
+				
+            }
+            .projectGrid {
+				position: relative;
+				background-color: #1d2e35;
+				width: 100%;
+				padding-bottom: 5%;
+            }
+			#eSlide {
+				width: 100%;
+				height: 800px;
+				position: relative;
+				margin-top: 5%;
+				left: 50%;
+				transform: translate(-50%);
+			}
+	}
+
+
+
+
+	@media screen and (min-width: 1024px ){
+
+
+			.navbar ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #121c21;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: 9998;
+
+			}
+
+			.navbar li {
+				float: right;
+			}
+
+			.navbar li a {
+				display: block;
+				color: #979b9d;
+				font-family: 'Press Start 2P';
+				font-size: 13px;
+				text-align: center;
+				padding: 16px 4px;
+				text-decoration: none;
+
+			}
+
+			.navbar h1 {
+				float: left;
+				padding-left: 1vh;
+				margin-top: 18px;
+				display: block;
+				color: #1f82bd;
+				font-family: 'Press Start 2P';
+				font-size: 15px;
+				text-align: left;
+				text-decoration: none;
+			}
+
+			.navbar li a:hover:not(.active) {
+				color: #ffffff;
+			}
+
+			.navbar .active {
+				color: #1f82bd;
+			}
+
+			.cover {
+				width: 100%;
+				height: 100vh;
+				background: linear-gradient(to bottom left, #121c21 50%, #1f82bd 50%)
+			}
+
+			.cover h1 {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-family: 'Press Start 2P';
+				font-size: 200%;
+				color: #ffffff;
+				font-weight: 100;
+				text-align: center;
+				line-height: 150%;
+				transform: translate(-50%, -50%);
+			}
+
+			.links {
+				position: fixed;
+				left: 0.5%;
+				top: 80vh;
+				height: auto;
+				width: 5.2%;
+				background-color: #121c21;
+				outline: 2.4px solid #1d2e35;
+				outline-offset: -4px;
+				z-index: 9999;
+
+			}
+
+
+
+
+			.footer1 {
+				position: relative;
+				background-color: #1f82bd;
+				width: 100%;
+				height: 13vh;
+			}
+
+
+
+			#copy {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 25%;
+				font-size: 14px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-75%, -50%);
+				margin-left: 2.7%;
+
+			}
+
+			#email {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-size: 15px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+			}
+
+			#phone {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 75%;
+				font-size: 15px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-25%, -50%);
+
+			}
+
+
+			#githubLink {
+				position: relative;
+				left: 50%;
+				width: 32px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 25%;
+
+			}
+
+			#githubLink:hover {
+				opacity: 0.3;
+			}
+
+			#emailLink {
+				position: relative;
+				left: 50%;
+				width: 32px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 15%;
+			}
+
+			#emailLink:hover {
+				opacity: 0.3;
+			}
+
+			#replLink {
+				position: relative;
+				left: 50%;
+				width: 32px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 15%;
+				margin-bottom: 25%;
+
+			}
+
+			#replLink:hover {
+				opacity: 0.3;
+			} 
+
+
+            
+            
+            .projectGrid {
+				position: relative;
+				background-color: #1d2e35;
+				width: 100%;
+				padding-bottom: 5%;
+            }
+			#eSlide {
+				width: 100%;
+				height: 700px;
+				position: relative;
+				margin-top: 5%;
+				left: 50%;
+				transform: translate(-50%);
+			}
+				
+
+
+	}
+
+
+	@media screen and (min-width: 1200px ){
+
+			.navbar ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #121c21;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: 9998;
+
+			}
+
+			.navbar li {
+				float: right;
+			}
+
+			.navbar li a {
+				display: block;
+				color: #979b9d;
+				font-family: 'Press Start 2P';
+				font-size: 16px;
+				text-align: center;
+				padding: 20px 4px;
+				text-decoration: none;
+
+			}
+
+			.navbar h1 {
+				float: left;
+				padding-left: 1vh;
+				margin-top: 22px;
+				display: block;
+				color: #1f82bd;
+				font-family: 'Press Start 2P';
+				font-size: 18px;
+				text-align: left;
+				text-decoration: none;
+			}
+
+			.navbar li a:hover:not(.active) {
+				color: #ffffff;
+			}
+
+			.navbar .active {
+				color: #1f82bd;
+			}
+
+			.cover {
+				width: 100%;
+				height: 100vh;
+				background: linear-gradient(to bottom left, #121c21 50%, #1f82bd 50%)
+			}
+
+			.cover h1 {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-family: 'Press Start 2P';
+				font-size: 200%;
+				color: #ffffff;
+				font-weight: 100;
+				text-align: center;
+				line-height: 150%;
+				transform: translate(-50%, -50%);
+			}
+
+			.links {
+				position: fixed;
+				left: 0.5%;
+				top: 80vh;
+				height: auto;
+				width: 3.5%;
+				background-color: #121c21;
+				outline: 2.4px solid #1d2e35;
+				outline-offset: -4px;
+				z-index: 9999;
+
+			}
+
+
+
+
+			.footer1 {
+				position: relative;
+				background-color: #1f82bd;
+				width: 100%;
+				height: 13vh;
+			}
+
+
+
+			#copy {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 25%;
+				font-size: 17px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-75%, -50%);
+				margin-left: 2%;
+			}
+
+			#email {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-size: 19px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+			}
+
+			#phone {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 75%;
+				font-size: 19px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-25%, -50%);
+
+			}
+
+			#githubLink {
+				position: relative;
+				left: 50%;
+				width: 34px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 25%;
+
+			}
+
+			#githubLink:hover {
+				opacity: 0.3;
+			}
+
+			#emailLink {
+				position: relative;
+				left: 50%;
+				width: 34px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 15%;
+			}
+
+			#emailLink:hover {
+				opacity: 0.3;
+			}
+
+			#replLink {
+				position: relative;
+				left: 50%;
+				width: 34px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 15%;
+				margin-bottom: 25%;
+
+			}
+
+			#replLink:hover {
+				opacity: 0.3;
+			} 
+            
+            
+            .projectGrid {
+				position: relative;
+				background-color: #1d2e35;
+				width: 100%;
+				padding-bottom: 5%;
+            }
+
+			#eSlide {
+				width: 100%;
+				height: 800px;
+				position: relative;
+				margin-top: 5%;
+				left: 50%;
+				transform: translate(-50%);
+			}
+				
+
+
+	}
+
+
+
+
+
+
+
+
+
+	@media screen and (min-width: 1920px ){
+
+
+			.navbar ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #121c21;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: 9998;
+
+			}
+
+			.navbar li {
+				float: right;
+			}
+
+			.navbar li a {
+				display: block;
+				color: #979b9d;
+				font-family: 'Press Start 2P';
+				font-size: 16px;
+				text-align: center;
+				padding: 20px 4px;
+				text-decoration: none;
+
+			}
+
+			.navbar h1 {
+				float: left;
+				padding-left: 1vh;
+				margin-top: 22px;
+				display: block;
+				color: #1f82bd;
+				font-family: 'Press Start 2P';
+				font-size: 18px;
+				text-align: left;
+				text-decoration: none;
+			}
+
+			.navbar li a:hover:not(.active) {
+				color: #ffffff;
+			}
+
+			.navbar .active {
+				color: #1f82bd;
+			}
+
+			.cover {
+				width: 100%;
+				height: 100vh;
+				background: linear-gradient(to bottom left, #121c21 50%, #1f82bd 50%)
+			}
+
+			.cover h1 {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-family: 'Press Start 2P';
+				font-size: 260%;
+				color: #ffffff;
+				font-weight: 100;
+				text-align: center;
+				line-height: 150%;
+				transform: translate(-50%, -50%);
+			}
+
+			.links {
+				position: fixed;
+				left: 0.5%;
+				top: 80vh;
+				height: auto;
+				width: 2.9%;
+				background-color: #121c21;
+				outline: 2.4px solid #1d2e35;
+				outline-offset: -4px;
+				z-index: 9999;
+
+			}
+
+
+
+
+			.footer1 {
+				position: relative;
+				background-color: #1f82bd;
+				width: 100%;
+				height: 13vh;
+			}
+
+
+
+			#copy {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 25%;
+				font-size: 23px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-75%, -50%);
+				margin-left: 2%;
+			}
+
+			#email {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-size: 23px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+			}
+
+			#phone {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 75%;
+				font-size: 23px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-25%, -50%);
+
+			}
+				
+			#githubLink {
+				position: relative;
+				left: 50%;
+				width: 36px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 25%;
+				margin-right: 25%;
+
+			}
+
+			#githubLink:hover {
+				opacity: 0.3;
+			}
+
+			#emailLink {
+				position: relative;
+				left: 50%;
+				width: 36px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 15%;
+				margin-right: 25%;
+
+			}
+
+			#emailLink:hover {
+				opacity: 0.3;
+			}
+
+			#replLink {
+				position: relative;
+				left: 50%;
+				width: 36px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 15%;
+				margin-bottom: 25%;
+				margin-right: 25%;
+
+			}
+
+			#replLink:hover {
+				opacity: 0.3;
+			} 
+
+			#replLink:hover {
+				opacity: 0.3;
+			}
+            
+            
+            .projectGrid {
+				position: relative;
+				background-color: #1d2e35;
+				width: 100%;
+				padding-bottom: 5%;
+            }
+
+			#eSlide {
+				width: 100%;
+				height: 850px;
+				position: relative;
+				margin-top: 5%;
+				left: 50%;
+				transform: translate(-50%);
+			}
+
+	}
+
+
+
+
+
+	@media screen and (min-width: 2560px ){
+
+
+			.navbar ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #121c21;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: 9998;
+
+			}
+
+			.navbar li {
+				float: right;
+			}
+
+			.navbar li a {
+				display: block;
+				color: #979b9d;
+				font-family: 'Press Start 2P';
+				font-size: 16px;
+				text-align: center;
+				padding: 20px 4px;
+				text-decoration: none;
+
+			}
+
+			.navbar h1 {
+				float: left;
+				padding-left: 1vh;
+				margin-top: 22px;
+				display: block;
+				color: #1f82bd;
+				font-family: 'Press Start 2P';
+				font-size: 18px;
+				text-align: left;
+				text-decoration: none;
+			}
+
+			.navbar li a:hover:not(.active) {
+				color: #ffffff;
+			}
+
+			.navbar .active {
+				color: #1f82bd;
+			}
+
+			.cover {
+				width: 100%;
+				height: 100vh;
+				background: linear-gradient(to bottom left, #121c21 50%, #1f82bd 50%)
+			}
+
+			.cover h1 {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-family: 'Press Start 2P';
+				font-size: 280%;
+				color: #ffffff;
+				font-weight: 100;
+				text-align: center;
+				line-height: 150%;
+				transform: translate(-50%, -50%);
+			}
+
+			.links {
+				position: fixed;
+				left: 0.5%;
+				top: 80vh;
+				height: auto;
+				width: 2.5%;
+				background-color: #121c21;
+				outline: 2.4px solid #1d2e35;
+				outline-offset: -4px;
+				z-index: 9999;
+
+			}
+
+
+
+
+			.footer1 {
+				position: relative;
+				background-color: #1f82bd;
+				width: 100%;
+				height: 13vh;
+			}
+
+
+
+			#copy {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 25%;
+				font-size: 23px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-75%, -50%);
+				margin-left: 2%;
+			}
+
+			#email {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-size: 23px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+			}
+
+			#phone {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 75%;
+				font-size: 23px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-25%, -50%);
+
+			}
+			#githubLink {
+				position: relative;
+				left: 50%;
+				width: 38px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 25%;
+				margin-right: 25%;
+
+			}
+
+			#githubLink:hover {
+				opacity: 0.3;
+			}
+
+			#emailLink {
+				position: relative;
+				left: 50%;
+				width: 38px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 15%;
+				margin-right: 25%;
+
+			}
+
+			#emailLink:hover {
+				opacity: 0.3;
+			}
+
+			#replLink {
+				position: relative;
+				left: 50%;
+				width: 38px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 15%;
+				margin-bottom: 25%;
+				margin-right: 25%;
+
+			}
+
+			#replLink:hover {
+				opacity: 0.3;
+			} 
+
+			#replLink:hover {
+				opacity: 0.3;
+			}
+            
+            
+            .projectGrid {
+				position: relative;
+				background-color: #1d2e35;
+				width: 100%;
+				padding-bottom: 5%;
+            }
+
+			#eSlide {
+				width: 100%;
+				height: 1000px;
+				position: relative;
+				margin-top: 5%;
+				left: 50%;
+				transform: translate(-50%);
+			}
+				
+
+	}
+
+
+
+
+
+	@media screen and (min-width: 3560px ){
+
+
+			.navbar ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #121c21;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: 9998;
+
+			}
+
+			.navbar li {
+				float: right;
+			}
+
+			.navbar li a {
+				display: block;
+				color: #979b9d;
+				font-family: 'Press Start 2P';
+				font-size: 26px;
+				text-align: center;
+				padding: 38px 7px;
+				text-decoration: none;
+
+			}
+
+			.navbar h1 {
+				float: left;
+				padding-left: 1vh;
+				margin-top: 37px;
+				display: block;
+				color: #1f82bd;
+				font-family: 'Press Start 2P';
+				font-size: 28px;
+				text-align: left;
+				text-decoration: none;
+			}
+
+			.navbar li a:hover:not(.active) {
+				color: #ffffff;
+			}
+
+			.navbar .active {
+				color: #1f82bd;
+			}
+
+			.cover {
+				width: 100%;
+				height: 100vh;
+				background: linear-gradient(to bottom left, #121c21 50%, #1f82bd 50%)
+			}
+
+			.cover h1 {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-family: 'Press Start 2P';
+				font-size: 350%;
+				color: #ffffff;
+				font-weight: 100;
+				text-align: center;
+				line-height: 150%;
+				transform: translate(-50%, -50%);
+			}
+
+			.links {
+				position: fixed;
+				left: 0.5%;
+				top: 80vh;
+				height: auto;
+				width: 2.5%;
+				background-color: #121c21;
+				outline: 2.4px solid #1d2e35;
+				outline-offset: -4px;
+				z-index: 9999;
+
+			}
+
+
+
+
+			.footer1 {
+				position: relative;
+				background-color: #1f82bd;
+				width: 100%;
+				height: 13vh;
+			}
+
+
+
+			#copy {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 25%;
+				font-size: 35px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-75%, -50%);
+				margin-left: 2%;
+			}
+
+			#email {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-size: 35px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-50%, -50%);
+			}
+
+			#phone {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 75%;
+				font-size: 35px;
+				font-family: 'Russo One';
+				font-weight: 100;
+				color: white;
+				transform: translate(-25%, -50%);
+
+			}
+			
+			#githubLink {
+				position: relative;
+				left: 50%;
+				width: 55px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 25%;
+				margin-right: 25%;
+
+			}
+
+			#githubLink:hover {
+				opacity: 0.3;
+			}
+
+			#emailLink {
+				position: relative;
+				left: 50%;
+				width: 55px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 15%;
+				margin-right: 25%;
+
+			}
+
+			#emailLink:hover {
+				opacity: 0.3;
+			}
+
+			#replLink {
+				position: relative;
+				left: 50%;
+				width: 55px;
+				height: auto;
+				transform: translate(-50%);
+				margin-top: 15%;
+				margin-bottom: 25%;
+				margin-right: 25%;
+
+			}
+
+			#replLink:hover {
+				opacity: 0.3;
+			} 
+
+			#replLink:hover {
+				opacity: 0.3;
+			}
+            
+            .projectGrid {
+				position: relative;
+				background-color: #1d2e35;
+				width: 100%;
+				padding-bottom: 5%;
+            }
+
+			#eSlide {
+				width: 100%;
+				height: 1350px;
+				position: relative;
+				margin-top: 5%;
+				left: 50%;
+				transform: translate(-50%);
+			}
+
+	}
+
+
+</style>
+<script src="script.js"> </script>
+</head>
+
+<body>
+	<div class="navbar">
+		<ul>
+			<h1> JC </h1>
+			<li><a class="active" href="extrasT.html">Extra-Curriculars</a></li>
+			<li><a href="projectsT.html">Projects |</a></li>
+			<li><a href="indexT.html">Home |</a></li>
+
+		</ul>
+    </div>
+    
+	<div class="cover">
+		<h1> <span class="nowrap">Extracurricular <br> & <br> Volunteer Activities</span></h1>
+
+	</div>
+	<div class="links">
+		<a href="https://github.com/Jacob-Cardoso"><img src="images/github.png" id="githubLink"></a>
+		<a href="mailto:jacobcardoso2003@gmail.com"><img src="images/email.png" id="emailLink"> </a>
+		<a href="https://repl.it/@JacobCardoso"><img src="images/repl.png" id="replLink"></a>
+	</div>
+	
+
+
+
+	<div class="projectGrid">
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQZvQ-o3CO-MLuYl424Ws1icReQpIa3wsWy2Da2QriJGLXPWnjt2qdLRe3S_iAtBVxPMetd0FOZ2ofa/embed?start=false&loop=false&delayms=3000" frameborder="0"  allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" id="eSlide"></iframe>
+		</div>
+
+    </div>
+	<div class="footer1">
+		<h4 id="copy">
+			&#169; 2020 Jacob Cardoso All Rights Reserved
+		</h4>
+		<h4 id="email">
+			Email: jacobcardoso2003@gmail.com
+		</h4>
+		<h4 id="phone">
+			Phone: 905-320-7895
+		</h4>
+	</div>
+</body>
+
+</html>
